@@ -18,5 +18,6 @@ Route::get('/login','User\UserController@login');
 
 Route::post('user','User\UserController@user');
 Route::post('foo','User\UserController@foo');
+ROUTE::
 
 Route::post('register','Login\LoginController@register');
