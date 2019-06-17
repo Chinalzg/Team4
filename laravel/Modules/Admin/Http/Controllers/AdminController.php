@@ -17,17 +17,26 @@ class AdminController extends Controller
     //登录界面
     public function index()
     {
+<<<<<<< HEAD
         return view('admin::login');
     }
 
+=======
+        return view('admin::index');
+    }
+>>>>>>> 7fcc343d9409b9fb8c418a816e328f65583ae7f7
     //电商首页
     public function select(){
         $data=request::all();
         print_r($data);
     }
+<<<<<<< HEAD
 
 
 
+=======
+    
+>>>>>>> 7fcc343d9409b9fb8c418a816e328f65583ae7f7
     /**
      * Show the form for creating a new resource.
      * @return Response
