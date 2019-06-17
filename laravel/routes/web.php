@@ -14,9 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/login','User\UserController@login');
 
-
-Route::post('foo','User\UserController@foo');
-
-Route::post('register','Login\LoginController@register');
