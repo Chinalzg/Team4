@@ -15,7 +15,7 @@ Route::prefix('admin')->group(function() {
     Route::get('/index', 'AdminController@index');
     Route::get('/add', 'AdminController@add');
     Route::post('/select', 'AdminController@select');
-<<<<<<< HEAD
+
     Route::any('/brandadd', 'BrandController@brandAdd');
     Route::any('/brandshow', 'BrandController@brandShow');
     Route::any('/branddel', 'BrandController@brandDel');
@@ -41,7 +41,7 @@ Route::prefix('admin')->group(function() {
 
 //     return call_user_func(array($tempObj, $action));
 // });
-=======
+
     Route::get('/goods', 'GoodsController@goods');
     Route::any('/addProduct', 'GoodsController@addProduct');
     Route::any('/addProductCheck', 'GoodsController@addProductCheck');

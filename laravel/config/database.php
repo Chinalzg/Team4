@@ -48,15 +48,9 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-<<<<<<< HEAD
             'database' => env('DB_DATABASE', 'commerce'),
-=======
-<<<<<<< HEAD
             'database' => env('DB_DATABASE', 'shop'),
-=======
             'database' => env('DB_DATABASE', 'team4'),
->>>>>>> 321b3bc3c2bdb352583554e7a0342dafc4971d04
->>>>>>> 023315483d4c5b546572110237437fe513dc258d
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'root'),
             'unix_socket' => env('DB_SOCKET', ''),
