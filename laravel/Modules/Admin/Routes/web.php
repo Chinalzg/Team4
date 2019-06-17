@@ -15,6 +15,33 @@ Route::prefix('admin')->group(function() {
     Route::get('/index', 'AdminController@index');
     Route::get('/add', 'AdminController@add');
     Route::post('/select', 'AdminController@select');
+<<<<<<< HEAD
+    Route::any('/brandadd', 'BrandController@brandAdd');
+    Route::any('/brandshow', 'BrandController@brandShow');
+    Route::any('/branddel', 'BrandController@brandDel');
+    Route::any('/branddelall', 'BrandController@brandDelall');
+    Route::any('/brandupdate', 'BrandController@brandUpdate');
+    Route::get('/brandupdsta', 'BrandController@brandUpdsta');
+    Route::any('/goodscategoryadd', 'GoodscategoryController@goodscategoryAdd');
+    Route::any('/goodscategoryshow', 'GoodscategoryController@goodscategoryShow');
+    Route::any('/goodscategorydel', 'GoodscategoryController@goodscategoryDel');
+    Route::any('/goodscategoryupdate', 'GoodscategoryController@goodscategoryUpdate');
+    Route::get('/goodscategoryupdsta', 'GoodscategoryController@goodscategoryUpdsta');
+
+});
+
+// Route::any('{controller}/{action}', function($controller, $action) {
+
+
+//     $namespace = 'Modules\Admin\Http\Controllers\\';
+
+//     $className = $namespace . ucfirst($controller . "Controller");
+
+//     $tempObj = new $className();
+
+//     return call_user_func(array($tempObj, $action));
+// });
+=======
     Route::get('/goods', 'GoodsController@goods');
     Route::any('/addProduct', 'GoodsController@addProduct');
     Route::any('/addProductCheck', 'GoodsController@addProductCheck');
@@ -53,3 +80,4 @@ Route::prefix('admin')->group(function() {
 
 
 
+>>>>>>> 023315483d4c5b546572110237437fe513dc258d
