@@ -37,6 +37,18 @@ Route::prefix('admin')->group(function() {
     Route::any('/attributeValueUpdatec', 'AttributeController@attributeValueUpdatec');
     Route::any('/attributevalU', 'AttributeController@attributevalU');
     Route::any('/attributeListUpdatec', 'AttributeController@attributeListUpdatec');
+    Route::get('order/list', 'OrderController@list');
+    Route::get('order/orderList', 'OrderController@OrderDetail');
+    Route::post('order/updateUserInfo', 'OrderController@updateUserInfo');
+    Route::post('order/orderChange', 'OrderController@OrderChange');
+    Route::any('order/orderStatusInsert', 'OrderController@OrderStatusInsert');
+    Route::get('order/orderStatusList', 'OrderController@OrderStatusList');
+    Route::get('order/orderStatusDelete', 'OrderController@OrderStatusDelete');
+    Route::any('order/orderStatusUpdate', 'OrderController@OrderStatusUpdate');
+    Route::any('activityInsert', 'ActivityController@activityInsert');
+    Route::get('activityList', 'ActivityController@activityList');
+    // Route::get('order/orderStatus', 'OrderController@OrderStatusList');
+
 });
 
 
