@@ -13,7 +13,6 @@
             <tr>
                 <th>菜单ID</th>
                 <th>菜单名称</th>
-                <th>父菜单ID</th>
                 <th>父菜单名称</th>
                 <th>是否显示</th>
                 <th width="150">操作</th>
@@ -22,7 +21,7 @@
             <tr nid="<?= $v['id']?>">
                 <td><?= $v['id']?></td>
                 <td style="color: red"><?= $v['power_name']?></td>
-                <td><?= $v['pid']?></td>
+                
                 <td>顶级菜单</td>
                 @if($v['status'] == 1)
                 <td>显示</td>
@@ -38,6 +37,7 @@
                 </td>
             </tr>
             @endforeach
+   
 
         </table>
     </div>

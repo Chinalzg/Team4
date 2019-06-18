@@ -46,19 +46,13 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', '39.96.164.76'),
             'port' => env('DB_PORT', '3306'),
-<<<<<<< HEAD
-            'database' => env('DB_DATABASE', 'ceshi'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
-=======
-            'database' => env('DB_DATABASE', 'commerce'),
-            'database' => env('DB_DATABASE', 'shop'),
+
             'database' => env('DB_DATABASE', 'team4'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'root'),
->>>>>>> 7fcc343d9409b9fb8c418a816e328f65583ae7f7
+
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

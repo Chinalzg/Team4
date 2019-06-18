@@ -18,11 +18,34 @@
                     <label>拥有权限：</label>
                 </div>
                 <div class="field">
+                  
                     @foreach($info as $k=>$v)
-                        <input type="checkbox" name="power_name[]" value="{{$v['id']}}">{{$v['power_name']}}
+                       
+                           
+                            
+                        <input type="checkbox" name="power_name[]" value="{{$v['id']}}" class="checks" class="par{{$v['id']}}">{{$v['power_name']}}
+                          
+                      
+                      
+                        
+                      
+
+                        
+                      
+
+                   
+
+                    
                     @endforeach
+                      
                 </div>
             </div>
+                      <tr>
+        <input type="checkbox" id="checkall"/>
+          全选 
+         
+     
+
 
             <div class="form-group">
                 <div class="label">
@@ -38,4 +61,29 @@
         </form>
     </div>
     </body>
+    
+<script>
+        $("#checkall").click(function(){ 
+  $("input[name='power_name[]']").each(function(){
+      if (this.checked) {
+          this.checked = false;
+      }
+      else {
+          this.checked = true;
+      }
+  });
+})
+//           $(".checks").click(function(){ 
+//             var id = $(this).val();
+//           $(".son"+id).each(function(){
+//               if (this.checked) {
+//                   this.checked = false;
+//               }
+//               else {
+//                   this.checked = true;
+//               }
+//   });
+// })
+
+</script>
 @stop

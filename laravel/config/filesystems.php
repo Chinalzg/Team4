@@ -45,11 +45,11 @@ return [
 
         'local' => [
             'driver' => 'local',
-<<<<<<< HEAD
-            'root' => storage_path('app'),
-=======
+
+            
+
             'root' => public_path('static/images'),
->>>>>>> 7fcc343d9409b9fb8c418a816e328f65583ae7f7
+
         ],
 
         'public' => [
@@ -59,14 +59,8 @@ return [
             'visibility' => 'public',
         ],
 
-<<<<<<< HEAD
-=======
-        'uploads' => [
-            'driver' => 'local',
-            'root' => public_path('uploads'),
-        ],
 
->>>>>>> 7fcc343d9409b9fb8c418a816e328f65583ae7f7
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

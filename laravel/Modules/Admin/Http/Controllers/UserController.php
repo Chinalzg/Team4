@@ -27,9 +27,10 @@ class UserController extends Controller
     }
 
     //实现添加同时赋角色
-    public function userAdds(Request $request){
+     public function userAdds(Request $request){
         $data['admin_name']=$request->post('admin_name');
         $data['pwd']=$request->post('pwd');
+        $data['pwd'] = md5($data['pwd']);
 
         $time=time();
         $data['create']=date("Y-m-d",$time);
@@ -37,22 +38,27 @@ class UserController extends Controller
         //接收到的角色ID
         $role_id=$request->post('role_name');
         $admin=new Admin();
-
-        DB::beginTransaction();
-        try{
-            $res=$admin->addAdmin($data);
-            if($res){
-                foreach ($role_id as $k=>$v){
-                    DB::table('u_r')->insert(['admin_id'=>$res,'role_id'=>$v]);
+        $arr=$admin->name($data['admin_name']);
+        if($arr){
+            return redirect('admin/user/userShow')->with('已经存在');
+        }else{
+            DB::beginTransaction();
+            try{
+                $res=$admin->addAdmin($data);
+                if($res){
+                    foreach ($role_id as $k=>$v){
+                        DB::table('u_r')->insert(['admin_id'=>$res,'role_id'=>$v]);
+                    }
                 }
+                DB::commit();
+                return redirect('admin/user/userShow')->with('添加成功');
+            }catch (\Exception $e){
+                DB::rollBack();
+                return redirect('admin/user/userShow')->with('添加失败');
             }
-            DB::commit();
-            return redirect('admin/user/userShow')->with('添加成功');
-        }catch (\Exception $e){
-            DB::rollBack();
-            return redirect('admin/user/userShow')->with('添加失败');
         }
     }
+
 
     //管理员展示
      public function userShow(){

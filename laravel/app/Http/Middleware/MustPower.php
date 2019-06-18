@@ -13,7 +13,7 @@ class MustPower
     public function handle($request, Closure $next)
     {
         $url=Route::current()->getActionName();
-
+        
         $c=strtolower(substr($url,strrpos($url,'\\')+1));
 
         $controller=substr($c,0,strpos($c,'controller'));

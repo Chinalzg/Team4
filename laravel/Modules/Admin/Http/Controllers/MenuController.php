@@ -20,6 +20,7 @@ class MenuController extends Controller
 {
     //菜单添加页面
     public function menuAdd(){
+        
         $obj=new Power();
         $power=$obj->getPower();
         $arr=$this->getTree($power);

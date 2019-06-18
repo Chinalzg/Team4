@@ -24,7 +24,7 @@ class Goods extends Model
      */
     public function brand()
     {
-        $data = DB::table('brand')->get();
+        $data = DB::table('brands')->get();
 
         return $data;
     }

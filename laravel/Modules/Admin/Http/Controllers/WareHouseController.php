@@ -41,18 +41,18 @@ class WareHouseController extends Controller
 
   }
 
-  public function houseSave(StoreBlogPost $request)
+  public function houseSave()
   {
       if ($_POST) {
 
           $data = $_POST;
-
-          $validated = $request->validated();
+       
+          
 
           $house = new House();
 
           $data = $house->houseInsert($data);
-
+        
           if ($data) {
               return redirect('admin/house');
 

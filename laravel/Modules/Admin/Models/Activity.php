@@ -25,7 +25,7 @@ class Activity extends Model
 
       public static function getActivityList()
       {		
-      	return Db::table('activity as a')->join('activity_type as t', 'a.activity_id', '=', 't.id')->join('goods as g', 'a.goods_id', '=', 'g.id')->select('a.id', 'a.title', 'a.content', 'a.start_time', 'a.end_time', 't.activity_name', 'g.goods_name')->paginate(5);
+      	return Db::table('activity as a')->join('activity_type as t', 'a.activity_id', '=', 't.id')->join('goods as g', 'a.goods_id', '=', 'g.id')->select('a.id', 'a.title', 'a.content', 'a.start_time', 'a.end_time', 't.activity_name', 'g.name')->paginate(5);
       						         
       }
 }

@@ -56,7 +56,7 @@ class House extends Model
         -> where('id' , $id)
 
         ->first();
-
+ 
     $status = $data ->status;
 
      if ($status == 1)
@@ -65,11 +65,11 @@ class House extends Model
 
              -> where('warehouse.id' , $id)
 
-             ->join('product', 'warehouse.product_id', '=', 'product.id')
+             ->join('goods', 'warehouse.g_id', '=', 'goods.id')
 
              ->join('user', 'warehouse.user_id', '=', 'user.id')
-
-             ->select('warehouse.create_time as wcreate_time' ,'warehouse.id as cid' ,'warehouse.status as wstatus' , 'product.name as pname'    ,'warehouse.*' , 'product.*' , 'user.*' )
+             
+             ->select('warehouse.create_time as wcreate_time' ,'warehouse.id as cid' ,'warehouse.status as wstatus' , 'goods.name as pname'    ,'warehouse.*' , 'goods.*' , 'user.*' )
 
              ->get();
 
@@ -91,11 +91,11 @@ class House extends Model
 
          -> where('warehouse.id' , $id)
 
-         ->join('product', 'warehouse.product_id', '=', 'product.id')
+         ->join('goods', 'warehouse.g_id', '=', 'goods.id')
 
          ->join('user', 'warehouse.user_id', '=', 'user.id')
 
-         ->select('warehouse.name as wname' ,'warehouse.id as wid' ,'warehouse.status as wstatus' , 'product.name as pname'    ,'warehouse.*' , 'product.*' , 'user.*' )
+         ->select('warehouse.name as wname' ,'warehouse.id as wid' ,'warehouse.status as wstatus' , 'goods.name as pname'    ,'warehouse.*' , 'goods.*' , 'user.*' )
 
          ->first();
  }
@@ -135,7 +135,7 @@ class House extends Model
 
              ->where('code' , $code)
 
-             ->update(['number' => $numbers  , 'product_id'=>$res->product_id , 'status' => 1]);
+             ->update(['number' => $numbers  , 'g_id'=>$res->product_id , 'status' => 1]);
 
          return  DB::commit();
      } catch (\Exception $e){
@@ -174,11 +174,11 @@ class House extends Model
 
          -> where('warehouse.status' , 0)
 
-         ->join('product', 'warehouse.product_id', '=', 'product.id')
+         ->join('goods', 'warehouse.g_id', '=', 'goods.id')
 
          ->join('user', 'warehouse.user_id', '=', 'user.id')
 
-         ->select('warehouse.create_time as wcreate_time' ,'warehouse.id as wid' ,'warehouse.status as wstatus' , 'product.name as pname'    ,'warehouse.*' , 'product.*' , 'user.*' )
+         ->select('warehouse.create_time as wcreate_time' ,'warehouse.id as wid' ,'warehouse.status as wstatus' , 'goods.name as pname'    ,'warehouse.*' , 'goods.*' , 'user.*' )
 
          ->get();
  }
