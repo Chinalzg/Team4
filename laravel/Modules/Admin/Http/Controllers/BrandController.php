@@ -18,6 +18,14 @@ class BrandController extends Controller
 
 			$post = $request->input();
 
+			$validatedData = $request->validate([
+		        'name' => 'required|max:255',
+		        'web' => 'required',
+		        'desc' => 'required',
+		        'order' => 'required',
+		        'status' => 'required',
+		    ]);
+
 			$logo = $request->file('logo')->store('public');
 
 			$logos = str_replace('public', '', $logo);

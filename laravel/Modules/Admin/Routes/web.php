@@ -28,7 +28,7 @@ Route::prefix('admin')->group(function() {
     Route::any('/goodscategoryupdate', 'GoodscategoryController@goodscategoryUpdate');
     Route::get('/goodscategoryupdsta', 'GoodscategoryController@goodscategoryUpdsta');
 
-});
+
 
 // Route::any('{controller}/{action}', function($controller, $action) {
 
@@ -78,6 +78,3 @@ Route::prefix('admin')->group(function() {
 
 });
 
-
-
->>>>>>> 023315483d4c5b546572110237437fe513dc258d
