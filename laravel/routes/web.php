@@ -29,3 +29,9 @@ Route::post('register','Login\LoginController@register');
 
 Route::get('/brandadd','Modules\Admin\Http\Controllers\BrandController@brandAdd');
 
+Route::group(['prefix' => 'jwt'], function () {
+    Route::post('register', 'JwtController@register');
+    Route::post('login', 'JwtController@login');
+    Route::get('/', ['uses'=>'JwtController@index','middleware'=>'auth:apijwt']); 
+    
+});

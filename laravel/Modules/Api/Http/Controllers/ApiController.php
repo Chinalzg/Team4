@@ -5,6 +5,10 @@ namespace Modules\Api\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Lcobucci\JWT\Signer\Hmac\Sha256;
+use Lcobucci\JWT\Signer\Rsa\Sha256;
+use Lcobucci\JWT\Signer\Keychain;
+use Lcobucci\JWT\Parser;
 
 class ApiController extends Controller
 {
@@ -14,7 +18,7 @@ class ApiController extends Controller
      */
     public function index()
     {
-        return view('api::index');
+        return 'index';
     }
 
     /**
@@ -62,9 +66,15 @@ class ApiController extends Controller
      * @param int $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $token = Str::random(60);
+
+        $request->user()->forceFill([
+            'api_token' => hash('sha256', $token),
+        ])->save();
+
+        return ['token' => $token];
     }
 
     /**

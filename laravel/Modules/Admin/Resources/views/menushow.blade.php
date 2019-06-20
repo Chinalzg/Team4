@@ -79,7 +79,7 @@
                         str += '<tr class='+v.pid+' nid='+v.id+' id="son'+v.id+'">';
                         str += '<td>'+v.id+'</td>';
                         str += '<td>'+v.power_name+'</td>';
-                        str += '<td>'+v.pid+'</td>';
+                 
                         str += '<td>'+e.info.power_name+'</td>';
 
                         if(v.status==1){

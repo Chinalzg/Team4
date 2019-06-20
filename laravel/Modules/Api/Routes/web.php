@@ -12,5 +12,10 @@
 */
 
 Route::prefix('api')->group(function() {
-    Route::get('/', 'ApiController@index');
+    //分类商品
+    Route::get('/getCategory', 'CategoryController@categoryList');//获取某个分类的
+    Route::post('/insertCart', 'CategoryController@insertCart');//添加购物车
+    Route::post('/insertCollect', 'CategoryController@insertCollect');
+    Route::post('/register', 'UserController@register');
+    Route::get('/invite', 'UserController@invite');
 });
