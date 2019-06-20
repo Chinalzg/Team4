@@ -28,7 +28,11 @@ class BrandController extends Controller
 
 			$logo = $request->file('logo')->store('public');
 
-			$logos = str_replace('public', '', $logo);
+			$logo = $request->file('logo')->store('');
+
+			$logos= "/static/images/".$logo;
+
+			
 
 			$data = [
 				'name' => $post['name'],
@@ -38,7 +42,7 @@ class BrandController extends Controller
 				'order' => $post['order'],
 				'status' => $post['status']
 			];
-
+			
 			$res = Brand::insert($data);
 
 			if ($res) {

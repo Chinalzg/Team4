@@ -48,7 +48,7 @@
           <td>{{$v->id}}
            </td>
            <td>{{$v->title}}</td>
-           <td>{{$v->goods_name}}</td>
+           <td>{{$v->name}}</td>
            <td>{{$v->activity_name}}</td>
            <td>{{$v->content}}</td>
            <td>{{date("Y-m-d H:i:s", $v->start_time)}}</td>

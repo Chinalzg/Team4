@@ -51,7 +51,7 @@
           </td>
           <td width="150">{{$v->name}}</td>
           <td width="200">{{$v->web}}</td>
-          <td width="200"><img src="{{asset('storage'.$v->logo)}}" alt="" width="200" height="120"></td>
+          <td width="200"><img src="{{$v->logo}}" alt="" width="200" height="120"></td>
           <!-- <td><img src="{{ asset('storage/app/public/'.$v->logo) }}" alt=""></td> -->
           <td width="600">{{$v->desc}}</td>
           <td width="50">{{$v->order}}</td>
@@ -115,7 +115,7 @@ $('.del').click(function()
                     alert('删除成功');
                     _this.parents('tr').remove();
                 } else {
-                    alert('删除失败');
+                    alert('有子级分类不可删除');
                 }
             }
         });
