@@ -421,187 +421,19 @@ $(function() {
  </div>
  <!--结束-->
  <!--产品列表样式-->
- <div class="p_list  clearfix">
+ <div class="p_list  clearfix" id="box">
    <ul>
-    <li class="gl-item">
+    <li class="gl-item" v-for='v in list'>
 	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-1.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-2.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-3.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-4.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-5.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-6.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-4.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-10.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-9.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-8.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-7.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-6.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-4.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-4.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
-	</li>
-	<li class="gl-item">
-	<div class="Borders">
-	 <div class="img"><a href="#"><img src="Products/P-4.jpg" style="width:220px;height:220px"/></a></div>
-	 <div class="Price"><b>¥89</b><span>[¥49.01/500g]</span></div>
-	 <div class="name"><a href="#">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a></div>
-	 <div class="Review">已有<a href="#">2345</a>评论</div>
-	 <div class="p-operate">
-	  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
-	  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
-	 </div>
-	 </div>
+		 <div class="img"><a href="productdetailed"><img :src='v.image' style="width:220px;height:220px"/></a></div>
+		 <div class="Price"><b>¥${v.price}</b><span>[${v.subtitle}]</span></div>
+		 <div class="name"><a href="#">${v.name}</a></div>
+		 <!-- <div class="Review">已有<a href="#">2345</a>评论</div> -->
+		 <div class="p-operate">
+			  <a href="#" class="p-o-btn Collect"><em></em>收藏</a>
+			  <a href="#" class="p-o-btn shop_cart"><em></em>加入购物车</a>
+		 </div>
+	</div>
 	</li>
    </ul>
    <div class="Paging">
@@ -776,5 +608,38 @@ $(function() {
     <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan iconfont icon-top"></span> <strong>返回顶部</strong> </li>
   </ul>
 </div>
+<div id="box">
+	${list}
+</div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+<script>
+
+var vm = new Vue({
+        el:'#box',
+        data:{
+            list:[],
+        },
+        delimiters: ['${', '}'],
+        // console.log(data.list),
+        created:function () {
+          this.getlist();//这里定义这个方法，vue实例之后运行到这里就调用这个函数
+        },
+
+        methods:{
+        	getlist:function(){
+                //发送get请求
+                this.$http.get('/api/getCategory',{params : {id:1} }).then(function(res){
+                    this.list = res.body.data;
+                    console.log(res.body.data)
+                },function(){
+                    console.log('请求失败处理');
+                });
+			}
+            
+        }      
+    });
+
+</script>
