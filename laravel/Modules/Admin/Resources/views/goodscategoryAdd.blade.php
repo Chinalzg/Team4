@@ -57,7 +57,16 @@
       
       <div class="form-group">
         <div class="label">
-          <label>品牌状态：</label>
+          <label>分类状态：</label>
+        </div>
+        <div class="field">
+          <div class="product-mulde product-mulde-a">
+                    <ul>
+                      <li><input type="radio" name="status" value="1"><label>启用</label>
+                          <input type="radio" name="status" value="2"><label>禁用</label>
+                      </li>
+                    </ul>
+                  </div>
         </div>
         </div>
       <div class="form-group">

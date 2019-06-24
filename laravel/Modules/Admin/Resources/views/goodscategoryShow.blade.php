@@ -81,7 +81,7 @@ $('.del').click(function()
                     alert('删除成功');
                     _this.parents('tr').remove();
                 } else {
-                    alert('删除失败');
+                    alert('有子菜单不可删除');
                 }
             }
         });

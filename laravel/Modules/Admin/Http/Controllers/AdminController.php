@@ -99,4 +99,15 @@ class AdminController extends Controller
         }
         return $menu;
     }
+
+    public function changeLocale($locale)
+    {
+        if (in_array($locale, ['en', 'zh'])) {
+            session()->put('locale', $locale);
+        }
+        return redirect()
+            ->back()
+            ->withInput();
+    
+        }
 }
