@@ -109,9 +109,9 @@ class BrandController extends Controller
 
 			$post = $request->input();
 
-			$logo = $request->file('logo')->store('public');
+			$logo = $request->file('logo')->store('');
 
-			$logos = str_replace('public', '', $logo);
+			$logos= "/static/images/".$logo;
 
 			$data = [
 				'name' => $post['name'],

@@ -65,7 +65,7 @@
       
       <div class="form-group">
         <div class="label">
-          <label>品牌状态：</label>
+          <label>分类状态：</label>
         </div>
         <div class="field">
           <div class="product-mulde product-mulde-a">

@@ -4,12 +4,11 @@
 <body style="background-color:#f2f9fd;">
 <div class="header bg-main">
     <div class="logo margin-big-left fadein-top">
-        <h1><img src="{{ URL::asset('static/images/y.jpg') }}" class="radius-circle rotate-hover" height="50" alt="" />后台管理中心</h1>
+        <h1><img src="{{ URL::asset('static/images/y.jpg') }}" class="radius-circle rotate-hover" height="50" alt="" />乐购管理中心</h1>
     </div>
     <div class="head-l">
         <a class="button button-little bg-green" href="" target="_blank">
             <span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;
-        <a href="#" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a> &nbsp;&nbsp;
         <a class="button button-little bg-red" href="{{'logout'}}"><span class="icon-power-off"></span> 退出登录</a>
     </div>
 </div>
@@ -45,7 +44,8 @@
     <li><a href="{{'welcome'}}" target="right" class="icon-home"> 首页</a></li>
     <li><a href="{{'welcome'}}" id="a_leader_txt">个人信息</a></li>
     <li><b>当前语言：</b><span style="color:red;">中文</span>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;切换语言：<a href="##">中文</a> &nbsp;&nbsp;<a href="##">英文</a> </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;切换语言：<a href="##">中文</a> &nbsp;&nbsp;
+<a href="{{ 'changeLocale/en' }}">英文</a> </li>
 </ul>
 <div class="admin">
     <iframe scrolling="auto" rameborder="0" src="welcome" name="right" width="100%" height="100%"></iframe>

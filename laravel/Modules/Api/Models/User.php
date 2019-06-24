@@ -17,4 +17,9 @@ class User extends Model
 		$data['add_time'] = time();
 		return User::insertGetId($data);
 	}
+
+	public static function getUser($data)
+	{
+		return User::where('name', $data['name'])->where('password', md5($data['password']))->first();
+	}
 }

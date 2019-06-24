@@ -13,9 +13,11 @@
 
 Route::prefix('api')->group(function() {
     //分类商品
-    Route::get('/getCategory', 'CategoryController@categoryList');//获取某个分类的
-    Route::post('/insertCart', 'CategoryController@insertCart');//添加购物车
-    Route::post('/insertCollect', 'CategoryController@insertCollect');
-    Route::post('/register', 'UserController@register');
-    Route::get('/invite', 'UserController@invite');
+    Route::get('/getCategory', 'CategoryController@categoryList')->middleware('token');//获取某个分类的
+    Route::post('/insertCart', 'CategoryController@insertCart')->middleware('token');//添加购物车
+    Route::post('/insertCollect', 'CategoryController@insertCollect')->middleware('token');//添加收藏
+    Route::post('/register', 'UserController@register');//注册
+    Route::get('/invite', 'UserController@invite');//注册激活
+    Route::post('/login', 'UserController@login');//登陆
+    Route::get('/myCart', 'CartController@cart')->middleware('token');//我的购物车
 });

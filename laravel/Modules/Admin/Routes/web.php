@@ -39,6 +39,7 @@ Route::prefix('admin')->group(function() {
     Route::post('/menu/menuUpdate','MenuController@menuUpdate');
 
 
+
     Route::any('/brandadd', 'BrandController@brandAdd');
     Route::any('/brandshow', 'BrandController@brandShow');
     Route::any('/branddel', 'BrandController@brandDel');
@@ -146,3 +147,6 @@ Route::prefix('admin')->group(function() {
     Route::get('/housedelete', 'WareHouseController@houseDelete');
 
 });
+});
+Route::get('/changeLocale/{locale}', 'AdminController@changeLocale')->middleware('setLocale');
+
