@@ -47,9 +47,16 @@ Route::prefix('admin')->group(function() {
     Route::any('order/orderStatusUpdate', 'OrderController@OrderStatusUpdate');
     Route::any('activityInsert', 'ActivityController@activityInsert');
     Route::get('activityList', 'ActivityController@activityList');
-    // Route::get('order/orderStatus', 'OrderController@OrderStatusList');
-
 });
+Route::prefix('index')->group(function() {
+    Route::any('/login', 'LoginController@login');
+    Route::any('/loginCheck', 'LoginController@loginCheck');
+    Route::any('/registered', 'LoginController@registered');
+    Route::any('/index', 'IndexController@index');
+    Route::any('/list', 'IndexController@list');
+    Route::any('/goods', 'IndexController@goods');
+});
+
 
 
 

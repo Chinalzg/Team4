@@ -16,6 +16,15 @@
 <script type="text/javascript" src="{{ URL::asset('static/jeDate/jedate.js') }}"></script>
 </head>
 <body>
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
   <div class="panel admin-panel">
       <div class="panel-head"><strong class="icon-reorder"> 添加新商品</strong></div>
     	<div class="tab-box">

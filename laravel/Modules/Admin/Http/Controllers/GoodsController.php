@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Modules\Admin\Model\Goods;
+use App\Http\Requests\StoreGoodsPost;
 
 class GoodsController extends Controller
 {
@@ -68,8 +69,10 @@ class GoodsController extends Controller
     /**
      * 添加商品处理页面
      */
-    public function addProductCheck(Request $request)
+    public function addProductCheck(StoreGoodsPost $request)
     {
+        $validated = $request->validated();
+
         $file = $request->file('img');
 
         $path = $request->img->path();
@@ -224,6 +227,13 @@ class GoodsController extends Controller
         }
         
     }
+
+    public function register()
+    {
+        $data = $_POST;
+        return $data;
+    }
+
     /**
      * 电商首页
      */
@@ -235,6 +245,8 @@ class GoodsController extends Controller
         print_r($data);
 
     }
+
+   
 
     /**
      * Show the form for creating a new resource.
