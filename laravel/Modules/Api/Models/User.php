@@ -22,4 +22,6 @@ class User extends Model
 	{
 		return User::where('name', $data['name'])->where('password', md5($data['password']))->first();
 	}
+
+	
 }

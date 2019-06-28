@@ -15,10 +15,6 @@ class Collect extends Model
 
 		$data['add_time'] = time();
 
-		// return DB::transaction(function () {
-		// 		    DB::table('user')->increment('collects');
-		// 		    DB::table('collect')->insert($data);
-		// 		});
 		DB::beginTransaction();
 
 		$userResult = DB::table('user')->increment('collects');

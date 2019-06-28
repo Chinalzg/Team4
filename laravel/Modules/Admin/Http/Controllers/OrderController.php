@@ -84,10 +84,10 @@ class OrderController extends Controller
             if($request->isMethod('post'))	
             {	
             	$validatedData = $request->validate([
-			        'order_status' => 'required|regex:/\p{Han}/u|between:3,6|unique:order_Status',
+			        'order_status' => 'required|regex:/\p{Han}/u|between:3,6|unique:order_status',
 			        
 			    ]);
-
+            	// var_dump($_POST);exit;
             	$orderStatus = new OrderStatus();
             	$result = $orderStatus->insertOrderStatus($request->input());
 

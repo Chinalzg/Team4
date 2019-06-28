@@ -72,5 +72,10 @@ class CategoryController extends Controller
 	 	return response()->json(['code' => 200, 'message' => '添加成功']);
 	 }
 
+	 public function categoryRecommend()
+	 {
+	 	$category = Cat::getCategoryRecommend();
+	 	return response()->json(['code' => 200, 'message' => '添加成功', 'data' =>$category]);
+	 }
 	
 }

@@ -7,6 +7,8 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Modules\Api\Models\User as U;
+use Modules\Api\Models\Message;
+use Modules\Api\Models\Goods;
 use App\Http\Requests\StoreUserPost;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
@@ -110,5 +112,25 @@ class UserController extends Controller
 		$builder->sign($signer, $key);
 		// 获取生成的token
 		return (string)$builder->getToken();
+	}
+
+	public function message(Request $request)
+	{
+		$id = $request->input('id','');
+		if(!$id){
+			return response()->json(['code' => 408, 'message' => '用户id不存在']);
+		}
+
+		$message = Message::getMessage($id);
+		return response()->json(['code' => 200, 'message' => '请求成功', 'data' => $message]);
+	}
+
+	public function recommend(Request $request)
+	{
+			$size = $request->input('size', 10);
+		 	$p = $request->input('p', 1);
+		 	$data = Goods::getRecommend($size, $p);
+
+		 	return response()->json(['code' => 200, 'message' => '请求成功', 'data' => $data]);
 	}
 }
