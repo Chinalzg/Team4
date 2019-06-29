@@ -33,4 +33,16 @@ class Collect extends Model
 	{
 		return Collect::where('user_id', $data['user_id'])->where('goods_id', $data['goods_id'])->get();
 	}
+	public function colSlect($id)
+    {
+         return Collect::where('user_id',$id)
+             ->get()
+             ->toArray();
+    }
+
+    public function colDel($id,$goods_id){
+        return Collect::where('user_id',$id)
+            ->where('goods_id',$goods_id)
+            ->delete();
+    }
 }

@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Lcobucci\JWT\Builder;
 use Lcobucci\JWT\Signer\Hmac\Sha256;
+use Modules\Api\Models\Order;
+use Modules\Api\Models\Collect;
 
 class UserController extends Controller
 {
@@ -133,4 +135,180 @@ class UserController extends Controller
 
 		 	return response()->json(['code' => 200, 'message' => '请求成功', 'data' => $data]);
 	}
+	 //个人信息接口
+      public function userShow()
+      {
+          $id = $_GET['id'];
+          $data = DB::table('user')->where('id',$id)->first();
+          if(! $id){
+              return response()->json([
+                  'msg' => '请输入ID',
+                  'status' => '1001'
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $data
+              ]);
+          }
+      }
+
+      //个人信息修改
+      public function userUpd(Request $request)
+      {
+          //用户ID
+          $user_id = $request->post('id');
+          //接收修改的值
+          $data = $request->all();
+          $info = DB::table('user')
+              ->where('id',$user_id)
+              ->update($data);
+          if($info == 1){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '修改成功',
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 1005,
+                  'msg' => '修改失败',
+              ]);
+          }
+      }
+
+      //我的收藏接口
+      public function userCollect()
+      {
+          //用户ID
+          $user_id = $_GET['user_id'];
+          $obj = new Collect();
+          $info = $obj->colSlect($user_id);
+
+          foreach ($info as $k => $v){
+              $goods = new Goods();
+              $info[$k]['goods'] = $goods->goodsInfo($v['goods_id']);
+          }
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 4001,
+                  'msg' => '失败',
+              ]);
+
+          }
+      }
+
+      //删除收藏接口
+      public function userColdel()
+      {
+          //用户ID
+          $user_id = $_GET['user_id'];
+          //商品ID
+          $goods_id = $_GET['goods_id'];
+
+          $obj = new Collect();
+          $info = $obj->colDel($user_id,$goods_id);
+          if($info == 1){
+              return response()->json([
+                 'status' => 200,
+                  'msg' => '删除成功'
+              ]);
+          }else{
+              return response()->json([
+                  'status' => '4001',
+                  'msg' => '删除失败，请查看数据是否存在'
+              ]);
+          }
+
+      }
+
+      //我的订单接口  全部订单
+      public function orderShowall()
+      {
+          //接收用户ID
+          $userid = $_GET['id'];
+          $obj = new Order();
+          $info = $obj->orderAll($userid);
+//          print_r($info);die;
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '空空如也',
+              ]);
+          }
+
+      }
+
+      //我的订单接口  待支付订单
+      public function orderUnpaid()
+      {
+          //接收用户ID
+          $userid = $_GET['id'];
+          $obj = new Order();
+          $info = $obj->unpaid($userid);
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '空空如也',
+              ]);
+          }
+      }
+
+      //我的订单接口  待收货订单
+      public function orderUndone()
+      {
+          //接收用户ID
+          $userid = $_GET['id'];
+          $obj = new Order();
+          $info = $obj->undone($userid);
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '空空如也',
+              ]);
+          }
+      }
+
+      //我的订单接口  待评价订单
+      public function orderComment(){
+          //接收用户ID
+          $userid = $_GET['id'];
+          $info = DB::select("select * from `order` AS o LEFT JOIN order_detail AS od on o.id=od.order_id where is_comment = 2  AND o.buyer in($userid)");
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '空空如也',
+              ]);
+          }
+      }
 }
