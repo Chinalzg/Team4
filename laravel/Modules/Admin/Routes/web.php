@@ -147,6 +147,5 @@ Route::prefix('admin')->group(function() {
     Route::get('/housedelete', 'WareHouseController@houseDelete');
 
 });
-});
 Route::get('/changeLocale/{locale}', 'AdminController@changeLocale')->middleware('setLocale');
 

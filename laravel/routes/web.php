@@ -28,7 +28,7 @@ Route::post('register','Login\LoginController@register');
 
 Route::any('productlist','Admin\ProductController@productList');
 Route::any('productdetailed','Admin\ProductController@productDetailed');
-Route::any('shopcart','Admin\ShopController@shopCart');
+Route::any('getpromotion','Admin\ProductController@getPromotion');
 
 
 

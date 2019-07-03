@@ -6,57 +6,29 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="fonts/iconfont.css" rel="stylesheet" type="text/css" />
 <script src="js/jquery.min.1.8.2.js" type="text/javascript"></script>
-<script src="js/lrtk.js" type="text/javascript"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
 <script src="js/common_js.js" type="text/javascript"></script>
 <script src="js/footer.js" type="text/javascript"></script>
 <script src="js/jquery.jumpto.js" type="text/javascript"></script>
-<title>520私库-产品列表页</title>
+<title>无标题文档</title>
 </head>
-<script type="text/javascript" charset="UTF-8">
-<!--
- //点击效果start
- function infonav_more_down(index)
- {
-  var inHeight = ($("div[class='p_f_name infonav_hidden']").eq(index).find('p').length)*30;//先设置了P的高度，然后计算所有P的高度
-  if(inHeight > 60){
-   $("div[class='p_f_name infonav_hidden']").eq(index).animate({height:inHeight});
-   $(".infonav_more").eq(index).replaceWith('<p class="infonav_more"><a class="more"  onclick="infonav_more_up('+index+');return false;" href="javascript:">收起<em class="pulldown"></em></a></p>');
-  }else{
-   return false;
-  }
- }
- function infonav_more_up(index)
- {
-  var infonav_height = 85;
-  $("div[class='p_f_name infonav_hidden']").eq(index).animate({height:infonav_height});
-  $(".infonav_more").eq(index).replaceWith('<p class="infonav_more"> <a class="more" onclick="infonav_more_down('+index+');return false;" href="javascript:">更多<em class="pullup"></em></a></p>');
- }
-   
- function onclick(event) {
-  info_more_down();
- return false;
- }
- //点击效果end  
-//-->
-</script>
+
 <body>
- <div id="header_top">
+<!--顶部样式-->
+<div id="header_top">
   <div id="top">
     <div class="Inside_pages">
       <div class="Collection">下午好，欢迎光临520私库商城！<em></em><a href="#">收藏我们</a></div>
 	<div class="hd_top_manu clearfix">
 	  <ul class="clearfix">
-	   <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！<a href="login.html" class="red">[请登录]</a> 新用户<a href="registered.html" class="red">[免费注册]</a></li>
-	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="shop_cart.html">我的订单</a></li> 
-	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"> <a href="shopcart">购物车(<b>
-	   	<?php echo $sum ?>
-	   </b>)</a> </li>
+	   <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！<a href="#" class="red">[请登录]</a> 新用户<a href="#" class="red">[免费注册]</a></li>
+	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">我的订单</a></li> 
+	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"> <a href="#">购物车(<b>0</b>)</a> </li>
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">联系我们</a></li>
 	   <li class="hd_menu_tit list_name" data-addclass="hd_menu_hover"><a href="#" class="hd_menu">客户服务</a>
 	    <div class="hd_menu_list">
 		   <ul>
-		    <li><a href="Helper.html">常见问题</a></li>
+		    <li><a href="#">常见问题</a></li>
 			<li><a href="#">在线退换货</a></li>
 		    <li><a href="#">在线投诉</a></li>
 			<li><a href="#">配送范围</a></li>
@@ -98,13 +70,13 @@
 		    <div class="img"><img src="images/tianma.png"></div>
 		    <div class="content"><p><a href="#">产品名称</a></p><p>颜色分类:紫花8255尺码:XL</p></div>
 			<div class="Operations">
-			<p class="Price">￥100.00</p>
+			<p class="Price">￥55.00</p>
 			<p><a href="#">删除</a></p></div>
 		  </li>
 		</ul>		
 	 <div class="Shopping_style">
 	 <div class="p-total">共<b>1</b>件商品　共计<strong>￥ 515.00</strong></div>
-	  <a href="shop_cart.html" title="去购物车结算" id="btn-payforgoods" class="Shopping">去购物车结算</a>
+	  <a href="#" title="去购物车结算" id="btn-payforgoods" class="Shopping">去购物车结算</a>
 	 </div>	 
    </div>
  </div>
@@ -119,7 +91,7 @@
 	 <!--左侧栏目开始-->
 	 <ul class="Menu_list">	
 	    <li class="name">
-		<div class="Menu_name"><a href="product_list.html" >男装女装</a> <span>&lt;</span></div>
+		<div class="Menu_name"><a href="#" >男装女装</a> <span>&lt;</span></div>
 		<div class="link_name">
 		  <p><a href="#">茅台</a>  <a href="#">五粮液</a>  <a href="#">郎酒</a>  <a  href="#">剑南春</a></p>
           <p><a href="#">酱香型</a>  <a href="#">四川</a>  <a href="#">贵州</a>  <a  href="#">养生酒</a></p>
@@ -199,7 +171,7 @@
 		</div>		 
 		</li>
 		<li class="name">
-		<div class="Menu_name"><a href="#" >个性护理</a><span>&lt;</span></div>
+		<div class="Menu_name"><a href="#" >个人护理</a><span>&lt;</span></div>
 		<div class="link_name">
 		 <a href="#">饼干蛋糕</a><a href="#">糖果</a><a href="#">巧克力</a><a href="#">坚果</a>
          <a href="#">饼干蛋糕</a><a href="#">糖果</a><a href="#">巧克力</a><a href="#">坚果</a>
@@ -243,7 +215,7 @@
 		</div>	
 		</li>
 		<li class="name customize">
-		<div class="Menu_name"><a href="#" >私人定制</a><span>&lt;</span></div>		
+		<div class="Menu_name"><a href="#" >私人定制</a><span>&lt;</span></div>
 		</li>			
 	</ul>	
 	</div>		
@@ -252,7 +224,7 @@
 	<!--菜单栏-->
 	<div class="Navigation" id="Navigation">
 		 <ul class="Navigation_name">
-			<li><a href="index.html">首页</a></li>
+			<li><a href="#">美食</a></li>
 			<li><a href="#">美妆</a></li>
 			<li><a href="#">服饰</a></li>
 			<li><a href="#">产品预订</a></li>
@@ -260,7 +232,7 @@
 			<li><a href="#">礼品DIY</a></li>
 			<li><a href="#">区域合作</a></li>
 			<li><a href="#">联系我们</a></li>
-			<li><a href="shop_cart.html">购物车</a></li>
+			<li><a href="#">购物车</a></li>
 		 </ul>			 
 		</div>
 	<script>$("#Navigation").slide({titCell:".Navigation_name li"});</script>		
@@ -268,194 +240,122 @@
 </div>
 </div>
 </div>
-<!--产品条件筛选样式-->
-<div class="Inside_pages clearfix" >
- <!--位置-->
- <div id="Filter_style">
- <div class="Location_link">
-  <em></em><a href="#">进口食品、进口牛</a>  &lt;   <a href="#">进口饼干/糕点</a>  
+<!--广告-->
+<div style=" background-image:url(images/AD-11.jpg); background-position:center; background-repeat:no-repeat; height:470px;"></div>
+<!--团购样式-->
+<div class="Inside_pages clearfix">
+ <div class="group_buy">
+ <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
+   <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
+   <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
+   <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
+   <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
+   <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
+   <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
+   <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
+  
+   <div class="group_list">
+  <ul class="group_info"> 
+   <li class="group_img"><a href="#"><img src="images/Classify_img_20.jpg" /></a></li>
+   <li class="group_name">
+    <a href="#">好丽友 巧克力派48枚1.6kg 休闲零食大礼包</a>
+    <div class="group_content">松软蛋糕 棉花糖夹心 香甜软糯 松软可口</div>
+    <div class="group_Price"><span>团购价：</span><i>￥</i><em>45.00</em></div>
+    <div class="Original_Price">原价：￥65.20</div>
+    <a href="#" class="buy_botton">立即购买</a>
+   </li>
+  </ul>
+  </div>
  </div>
- <!--筛选样式-->
- <div class="Filter">
-  <div class="Filter_list clearfix">
-   <div class="Filter_title"><span>品牌：</span></div>
-   <div class="Filter_Entire"><a href="#">全部</a></div>
-   <div class="p_f_name infonav_hidden">
-    <p><a href="#" title="莱家/Loacker">莱家/Loacker </a>  
-	<a href="#" title="">丽芝士/Richeese</a>  
-	<a href="#" title="白色恋人/SHIROI KOIBITO ">白色恋人/SHIROI KOIBITO </a> 
-	<a href="#">爱时乐/Astick </a> 
-	<a href="#">利葡/LiPO </a> 
-	<a href="#">友谊牌/Tipo </a> 
-	<a href="#"> 三立/SANRITSU  </a>  
-	<a href="#"> 皇冠/Danisa </a>  </p>
-	 <p><a href="#">丹麦蓝罐/Kjeldsens</a>
-	<a href="#">茱莉/Julie's </a>  
-	<a href="#">向日葵/Sunflower </a>  
-	<a href="#">福多/fudo </a> 
-	<a href="#">非凡农庄/PEPPER...  </a>
-	<a href="#">凯尔森/Kelsen </a> 
-	<a href="#"> 蜜兰诺/Milano </a> 
-	<a href="#">壹格/EgE  </a>  </p>
-	 <p><a href="#">沃尔克斯/Walkers </a> 
-	<a href="#">澳门永辉/MACAU...</a>  
-    <a href="#" title="莱家/Loacker">莱家/Loacker </a>  
-	<a href="#" title="">丽芝士/Richeese</a>  
-	<a href="#" title="白色恋人/SHIROI KOIBITO ">白色恋人/SHIROI KOIBITO </a> 
-	<a href="#">爱时乐/Astick </a> 
-	<a href="#">利葡/LiPO </a> 
-	<a href="#">友谊牌/Tipo </a>  </p>
-	 <p><a href="#"> 三立/SANRITSU  </a>  
-	<a href="#"> 皇冠/Danisa </a>  
-	<a href="#">丹麦蓝罐/Kjeldsens</a>
-	<a href="#">茱莉/Julie's </a>  
-	<a href="#">向日葵/Sunflower </a>  
-	<a href="#">福多/fudo </a> 
-	<a href="#">非凡农庄/PEPPER...  </a>
-	<a href="#">凯尔森/Kelsen </a>  </p>
-	 <p><a href="#"> 蜜兰诺/Milano </a> 
-	<a href="#">壹格/EgE  </a>  
-	<a href="#">沃尔克斯/Walkers </a> 
-	<a href="#">澳门永辉/MACAU...</a>  
-       <a href="#" title="莱家/Loacker">莱家/Loacker </a>  
-	<a href="#" title="">丽芝士/Richeese</a>  
-	<a href="#" title="白色恋人/SHIROI KOIBITO ">白色恋人/SHIROI KOIBITO </a> 
-	<a href="#">爱时乐/Astick </a>  </p>
-	
-   </div>
-   <p class="infonav_more"><a href="#" class="more" href="javascript:" onclick="infonav_more_down(0);return false;">更多<em class="pullup"></em></a></p>
-  </div>
-  <div class="Filter_list clearfix">
-  <div class="Filter_title"><span>产地：</span></div>
-  <div class="Filter_Entire"><a href="#">全部</a></div>
-  <div class="p_f_name">
-   <a href="#">中国大陆</a>     
-   <a href="#">中国台湾</a>     
-   <a href="#">中国香港</a>     
-   <a href="#">中国澳门</a>     
-   <a href="#">日本</a>     
-   <a href="#">韩国</a>     
-   <a href="#">越南</a>    
-   <a href="#">泰国</a>
-  </div>
-  </div>
-  <div class="Filter_list clearfix">
-  <div class="Filter_title"><span>包装方式：</span></div>
-  <div class="Filter_Entire"><a href="#">全部</a></div>
-  <div class="p_f_name">
-  <a href="#">袋装</a><a href="#">盒装</a><a href="#">罐装</a><a href="#">礼盒装</a><a href="#">散装(称重)</a>
-  </div>
-  </div>
-  <div class="Filter_list clearfix">
-  <div class="Filter_title"><span>价格：</span></div>
-  <div class="Filter_Entire"><a href="#">全部</a></div>
-  <div class="p_f_name">
-    <a href="#">0-50</a><a href="#">50-150</a><a href="#">150-500</a><a href="#">500-1000</a><a href="#">1000以上</a>
-  </div>
-  </div>
- </div>
- </div>
- <div  class="scrollsidebar side_green" id="scrollsidebar"> 
-  <div class="show_btn" id="rightArrow"><span></span></div>
- <div class="page_left_style side_content"  >
-  <!--浏览记录-->
- 
-    <div class="side_title"><a title="隐藏" class="close_btn"><span></span></a></div>
-  <div class="Record side_list">
-     <div class="title_name">浏览记录</div>
-	 <ul>
-	  <li>
-	   <a href="#">
-	   <p><img src="images/cp-2.jpg"></p>
-	   <p class="p_name">商品名称</p>
-	   </a>
-	   <p><span class="p_Price left">价格:<b>￥5.30</b></span><span class="p_Sales right">销量：2345件</span></p>
-	  </li>
-	  <li>
-	   <a href="#">
-	   <p><img src="images/cp-3.jpg"></p>
-	   <p class="p_name">商品名称</p>
-	   </a>
-	   <p><span class="p_Price left">价格:<b>￥5.30</b></span><span class="p_Sales right">销量：2345件</span></p>
-	  </li>
-	  <li>
-	   <a href="#">
-	   <p><img src="common/images/cp-7.jpg"></p>
-	   <p class="p_name">商品名称</p>
-	   </a>
-	   <p><span class="p_Price left">价格:<b>￥5.30</b></span><span class="p_Sales right">销量：2345件</span></p>
-	  </li>
-	 </ul>
-   </div>
- </div>
-
- <script type="text/javascript"> 
-$(function() { 
-	$("#scrollsidebar").fix({
-		float : 'left',
-		//minStatue : true,
-		skin : 'green',	
-		durationTime : 600
-	});
-});
-</script>
- <div class="page_right_style">
- <!--排序样式-->
- <div id="Sorted">
- <div class="Sorted">
-  <div class="Sorted_style">
-   <a href="#" class="on">综合<i class="iconfont icon-pullup"></i></a>
-   <a href="#">销量<i class="iconfont icon-pullup"></i></a>
-   <a href="#">价格<i class="iconfont icon-pullup"></i></a>
-   <a href="#">新品<i class="iconfont icon-pullup"></i></a>
-   </div>
-   <!--产品搜索-->
-   <div class="product_search">
-    <input name="" type="text"  class="search_text"  value="请输入你要搜索的产品" onFocus="this.value=''" onBlur="if(!value){value=defaultValue;}"/><input name="" type="submit"  value="" class="search_btn"/>
-   </div>
-   <!--页数-->
-   <div class="s_Paging">
-   <span> 1/12</span>
-   <a href="#" class="on">&lt;</a>
-   <a href="#">&gt;</a>
-   </div>
-   </div>
- </div>
- <!--结束-->
- <!--产品列表样式-->
- <div class="p_list  clearfix" id="box">
-   <ul>
-    <li class="gl-item" v-for='v in list'>
-	<div class="Borders">
-		 <div class="img"><a href="productdetailed"><img :src='v.image' style="width:220px;height:220px"/></a></div>
-		 <div class="Price"><b>¥${v.price}</b><span>[${v.subtitle}]</span></div>
-		 <div class="name"><a href="#">${v.name}</a></div> 
-		 <div class="name"><a href="#">${v.id}</a></div>
-		 <!-- <div class="name"><a href="#">{{$user_id}}</a></div> -->
-		 <!-- <div class="Review">已有<a href="#">2345</a>评论</div> -->
-		 <div class="p-operate">
-			  <a href="#" class="p-o-btn Collect" @click="getcollect({{$user_id}}, v.id)"><em></em>收藏</a>
-			  <a href="#" class="p-o-btn shop_cart" @click="inshopcart({{$user_id}}, v.id, v.price)"><em></em>加入购物车</a>
-		 </div>
-	</div>
-	</li>
-   </ul>
-   <div class="Paging">
-     <a href="#" class="pn-prev disabled">&lt;上一页</a>
-	 <a href="#" class="on">1</a>
-	 <a href="#">2</a>
-	 <a href="#">3</a>
-	 <a href="#">4</a>
-	 <a href="#">下一页&gt;</a>
-	 <a href="#">尾页</a>
-	<span class="p-skip"><em>共<b>232</b>页&nbsp;&nbsp;到第</em><input id="page_jump_num" value="1" onkeydown="javascript:if(event.keyCode==13){page_jump();return false;}" class="input-txt"><em>页</em><a href="javascript:page_jump();" class="btn btn-default">确定</a></span>
-   </div>
- </div>
- </div>
-  </div>
 </div>
-
- </div>
   <!--底部样式-->
  <div class="ft_footer_service" id="footer">
   <div class="footerbox" >
@@ -521,35 +421,35 @@ $(function() {
 			<div class="bd">
 				<ul class="picList">
 					<li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic1.jpg" /></a></div>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic1.jpg" /></a></div>
                           <!--<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图1</a></div>-->					
                     </li>
 					<li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic2.jpg" /></a></div>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic2.jpg" /></a></div>
 						<!--<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图2</a></div>-->
 					</li>
 					<li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic3.jpg" /></a></div>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic3.jpg" /></a></div>
 						
 					</li>
 					<li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic4.jpg" /></a></div>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic4.jpg" /></a></div>
 						
 					</li>
 					<li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic5.jpg" /></a></div>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic5.jpg" /></a></div>
 						
 					</li>
 					<li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic6.jpg" /></a></div>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic6.jpg" /></a></div>
 						
 					</li>
                     <li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic6.jpg" /></a></div>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic6.jpg" /></a></div>
 						
 					</li>
                     <li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic6.jpg" /></a></div>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="images/pic6.jpg" /></a></div>
 						
 					</li>
 				</ul>
@@ -612,78 +512,5 @@ $(function() {
     <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan iconfont icon-top"></span> <strong>返回顶部</strong> </li>
   </ul>
 </div>
-<div id="box">
-	${list}
-</div>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script>
-
-var vm = new Vue({
-        el:'#box',
-
-        data:{
-            list:[],
-        },
-        delimiters: ['${', '}'],
-        // console.log(data.list),
-        created:function () {
-          this.getlist();//这里定义这个方法，vue实例之后运行到这里就调用这个函数
-          // this.getcart();
-        },
-
-        methods:{
-        	//商品展示
-        	getlist:function(){
-                //发送get 求
-                this.$http.get('/api/getCategory',{params : {id:1, token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhNSJ9.eyJpc3MiOiJsZWdvYXBpIiwiYXVkIjoiYWJlbiIsImp0aSI6IjRmMWcyM2ExMmFhNSIsImlhdCI6MTU2MjAzMDA0OSwiZXhwIjoxNTYyMDMzNjQ5LCJ1aWQiOjV9.E3NsRkp9-8k3GUmJ3TxW-543yFQvPCxHW-O5fJTrt1c'}}).then(function(res){
-                    this.list = res.body.data;
-                    console.log(res);
-                },function(){
-                    console.log('请求失败处理');
-                });
-			},
-			//右上角购物车显示
-			// getcart:function(){
-   //              //发送get 求
-   //              this.$http.get('/api/getCategory',{params : {id:1, token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhNSJ9.eyJpc3MiOiJsZWdvYXBpIiwiYXVkIjoiYWJlbiIsImp0aSI6IjRmMWcyM2ExMmFhNSIsImlhdCI6MTU2MjAzMDA0OSwiZXhwIjoxNTYyMDMzNjQ5LCJ1aWQiOjV9.E3NsRkp9-8k3GUmJ3TxW-543yFQvPCxHW-O5fJTrt1c'}}).then(function(res){
-   //                  this.list = res.body.data;
-   //                  console.log(res);
-   //              },function(){
-   //                  console.log('请求失败处理');
-   //              });
-			// },
-			//收藏
-			getcollect:function(user_id, id){
-                this.$http.post('/api/insertCollect',{
-                		user_id:user_id, 
-                		goods_id:id, 
-                		token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhNSJ9.eyJpc3MiOiJsZWdvYXBpIiwiYXVkIjoiYWJlbiIsImp0aSI6IjRmMWcyM2ExMmFhNSIsImlhdCI6MTU2MjAzMDA0OSwiZXhwIjoxNTYyMDMzNjQ5LCJ1aWQiOjV9.E3NsRkp9-8k3GUmJ3TxW-543yFQvPCxHW-O5fJTrt1c'},{emulateJSON: true}).then(function(res){
-                    // this.list = res.body.data;
-                    // console.log(res);
-                },function(){
-                    console.log('请求失败处理');
-                });
-			},
-			//加入购物车
-			inshopcart:function(user_id, id, price){
-                this.$http.post('/api/insertCart',{
-                		user_id:user_id, 
-                		goods_id:id, 
-                		goods_num:1,
-                		price:price,
-                		token:'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhNSJ9.eyJpc3MiOiJsZWdvYXBpIiwiYXVkIjoiYWJlbiIsImp0aSI6IjRmMWcyM2ExMmFhNSIsImlhdCI6MTU2MjAzMDA0OSwiZXhwIjoxNTYyMDMzNjQ5LCJ1aWQiOjV9.E3NsRkp9-8k3GUmJ3TxW-543yFQvPCxHW-O5fJTrt1c'},{emulateJSON: true}).then(function(res){
-                    // this.list = res.body.data;
-                    console.log(res);
-                },function(){
-                    console.log('请求失败处理');
-                });
-			}
-            
-        }      
-    });
-
-</script>

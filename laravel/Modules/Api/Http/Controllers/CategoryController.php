@@ -72,5 +72,27 @@ class CategoryController extends Controller
 	 	return response()->json(['code' => 200, 'message' => '添加成功']);
 	 }
 
+
+	 public function getPromotion(Request $request)
+	 {	
+	 	$catId = $request->input('id');
+	 	if(!$catId){
+	 		
+			return response()->json(['code' => 406 ,'message'=>'无效访问', 'data'=>[]]);
+	 	}
+	 		$size = $request->input('size', 20);
+		 	$p = $request->input('p', 1);
+		 	$sort = $request->input('sort', 'asc');
+		 	$sortfield = $request->input('s_field', 'price');
+		 	$data = Cat::getCategory($catId, $size, $p, $sort, $sortfield);
+		 	
+		 	return response()->json([
+		        'code' => '200', 
+		        'message' => '分类商品获取成功',
+		        'data' => $data
+			]);
+	 
+	 }
+
 	
 }
