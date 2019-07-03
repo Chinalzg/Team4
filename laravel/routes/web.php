@@ -18,8 +18,19 @@ Route::get('/', function () {
 
 Route::post('foo','User\UserController@foo');
 
-
-
-
-
 Route::post('register','Login\LoginController@register');
+<<<<<<< HEAD
+=======
+
+
+Route::get('/brandadd','Modules\Admin\Http\Controllers\BrandController@brandAdd');
+
+Route::group(['prefix' => 'jwt'], function () {
+    Route::post('register', 'JwtController@register');
+    Route::post('login', 'JwtController@login');
+    Route::get('/', ['uses'=>'JwtController@index','middleware'=>'auth:apijwt']); 
+    
+});
+
+Route::view('/shopCart', 'shopCart');
+>>>>>>> a

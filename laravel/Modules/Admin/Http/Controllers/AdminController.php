@@ -12,7 +12,7 @@ class AdminController extends Controller
 {
     //登录界面
     public function index()
-    {
+    {   
         return view('admin::login');
     }
 

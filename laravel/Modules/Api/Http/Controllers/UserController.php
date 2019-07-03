@@ -17,19 +17,28 @@ use Lcobucci\JWT\Signer\Hmac\Sha256;
 use Modules\Api\Models\Order;
 use Modules\Api\Models\Collect;
 
+
 class UserController extends Controller
 {
 	public function register(StoreUserPost $request)
 	{
+    
 		$validated = $request->validated();
  		if($request->input('password') !== $request->input('surePassword'))
  		{
  			return response()->json(['code' => 409, 'message' => '两次密码不一致']);
  		}
+<<<<<<< HEAD
  		// $path = $request->image->store('user');
  		
  		$data = $request->only(['name', 'password', 'email']);
  		// $data['image'] = $path;
+=======
+ 		
+ 		
+ 		$data = $request->only(['name', 'password', 'email']);
+ 		
+>>>>>>> a
  		
 		$result = U::insertUser($data);
 
@@ -87,6 +96,7 @@ class UserController extends Controller
 		}
 		
 		$token = $this->getToken($result->id, $result->name);
+<<<<<<< HEAD
 
 		// session::put();
 		$request->session()->put('user_id',$result['id']);
@@ -94,6 +104,9 @@ class UserController extends Controller
 		$request->session()->put('token',$token);
 		// session::put('name',$result['name']);
 
+=======
+    
+>>>>>>> a
 		return response()->json(['code' => 200, 'message' => '登陆成功', 'data' => $token]);
 
 
@@ -318,5 +331,33 @@ class UserController extends Controller
                   'msg' => '空空如也',
               ]);
           }
+      }
+
+      public function coupon(Request $request)
+      {
+          $id = $request->input('id', '');
+
+          if(!$id){
+              return response()->json(['code' => 406 ,'message' => '无效访问']);
+          }
+
+          
+          $coupon = U::getCoupon($id);
+
+          return response()->json(['code' => 200 ,'message' => '请求成功', 'data' => $coupon]);
+      }
+
+      public function integ(Request $request)
+      {
+          $id = $request->input('id', '');
+
+          if(!$id){
+              return response()->json(['code' => 406 ,'message' => '无效访问']);
+          }
+
+          
+          $integ = U::getInteg($id);
+
+          return response()->json(['code' => 200 ,'message' => '请求成功', 'data' => $integ]);
       }
 }
