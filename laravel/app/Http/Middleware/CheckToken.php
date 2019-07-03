@@ -43,3 +43,4 @@ class CheckToken
         return $next($request);
     }
 }
+

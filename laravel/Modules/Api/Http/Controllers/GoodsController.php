@@ -44,6 +44,7 @@ class GoodsController extends Controller
        $size = 5;
        $count = DB::table('cart')
            ->count();
+           
        if($page > ceil($count/$size)){
            return response()->json([
                'status' => 203 ,
@@ -68,23 +69,26 @@ class GoodsController extends Controller
                'msg' => '空空如也'
            ]);
        }else{
-           return response()->json([
+          
+          return response()->json([
                'status' => '200',
                'msg' => '成功',
-               'data' => $info
+               'data' => $info,
+               'count'=> ceil($count/$size)
+               
            ]);
+          
        }
    }
+
 
     //购物车删除商品
     public function cartDel()
     {
-       //用户ID
-        $userid=$_GET['userid'];
        //接收购物车商品 的ID
         $id = $_GET['id'];
         $obj = new Cart();
-        $info = $obj->cartDelete($id,$userid);
+        $info = $obj->cartDelete($id);
         if($info){
             return response()->json([
                 'status' => '200',
@@ -103,19 +107,13 @@ class GoodsController extends Controller
     {
         //接收购物车商品 的ID
         $id = $_POST['id'];
-        //用户ID
-        $userid = $_POST['userid'];
-        $goods_num = $_POST['goods_num'];
-        if(!$goods_num && isset($goods_num)){
-            return response()->json([
-                'status' => '4004',
-                'msg' => '修改的字段不存在',
-            ]);
+        $type = $_POST['type'] ?? '';
+        if($type){
+            $data=DB::table('cart')->where('id', $id)->increment('goods_num');
+        }else{
+            $data=DB::table('cart')->where('id', $id)->decrement('goods_num');
         }
-        $data=DB::table('cart')
-            ->where('user_id',$userid)
-            ->where('goods_id',$id)
-            ->update(['goods_num'=>$goods_num]);
+
         if($data){
             return response()->json([
                 'status' => '200',
@@ -123,7 +121,7 @@ class GoodsController extends Controller
             ]);
         }else{
             return response()->json([
-                'status' => '201',
+                'status' => '456',
                 'msg' => '修改失败',
             ]);
         }

@@ -20,10 +20,6 @@ Route::get('/login','User\UserController@login');
 
 Route::post('foo','User\UserController@foo');
 
-
-
-
-
 Route::post('register','Login\LoginController@register');
 
 
@@ -35,3 +31,5 @@ Route::group(['prefix' => 'jwt'], function () {
     Route::get('/', ['uses'=>'JwtController@index','middleware'=>'auth:apijwt']); 
     
 });
+
+Route::view('/shopCart', 'shopCart');

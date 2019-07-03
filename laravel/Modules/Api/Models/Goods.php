@@ -25,8 +25,8 @@ class Goods extends Model
    {
        return Goods::where('id',$id)
            ->select('name','image','price')
-           ->first()
-           ->toArray();
+           ->first();
+           
    }
 
 

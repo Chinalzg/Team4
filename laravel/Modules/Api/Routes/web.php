@@ -24,4 +24,6 @@ Route::prefix('api')->group(function() {
     Route::get('/recommend', 'UserController@recommend')->middleware('token');//为您推荐
     Route::get('/categoryRecommend', 'CategoryController@categoryRecommend')->middleware('token');//分类推荐
     Route::get('/getOneGoods', 'GoodsController@goods')->middleware('token');
+    Route::get('/getCoupon', 'UserController@coupon')->middleware('token');
+    Route::get('/getInteg', 'UserController@integ')->middleware('token');
 });

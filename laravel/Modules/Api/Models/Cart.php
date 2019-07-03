@@ -38,10 +38,9 @@ class Cart extends Model
             ->toArray();
     }
 
-    public function cartDelete($id,$userid)
+    public function cartDelete($id)
     {
-        return Cart::where('goods_id',$id)
-            ->where('user_id',$userid)
+        return Cart::where('id',$id)
             ->delete();
     }
 
