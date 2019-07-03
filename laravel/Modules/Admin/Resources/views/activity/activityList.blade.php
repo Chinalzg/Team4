@@ -73,7 +73,7 @@ function del(id){
 	if(confirm("您确定要删除吗?")){
 		$.ajax({
 			type:'get',
-			url:"{{'orderStatusDelete'}}",
+			url:"{{'ActivityDelete'}}",
 			data:{id:id},
 			dataType:'json',
 			success:function(e){

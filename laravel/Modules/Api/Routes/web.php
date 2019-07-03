@@ -20,4 +20,8 @@ Route::prefix('api')->group(function() {
     Route::get('/invite', 'UserController@invite');//注册激活
     Route::post('/login', 'UserController@login');//登陆
     Route::get('/myCart', 'CartController@cart')->middleware('token');//我的购物车
+    Route::get('/message', 'UserController@message')->middleware('token');//我的消息
+    Route::get('/recommend', 'UserController@recommend')->middleware('token');//为您推荐
+    Route::get('/categoryRecommend', 'CategoryController@categoryRecommend')->middleware('token');//分类推荐
+    Route::get('/getOneGoods', 'GoodsController@goods')->middleware('token');
 });
