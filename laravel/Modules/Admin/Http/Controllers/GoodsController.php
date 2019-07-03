@@ -230,6 +230,13 @@ class GoodsController extends Controller
         }
         
     }
+
+    public function register()
+    {
+        $data = $_POST;
+        return $data;
+    }
+
     /**
      * 电商首页
      */
@@ -241,6 +248,8 @@ class GoodsController extends Controller
         print_r($data);
 
     }
+
+   
 
     /**
      * Show the form for creating a new resource.

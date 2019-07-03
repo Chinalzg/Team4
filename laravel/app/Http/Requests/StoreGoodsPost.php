@@ -29,14 +29,8 @@ class StoreGoodsPost extends FormRequest
             'category' => 'required:Goods',
             'brand' => 'required:Goods',
             'warehouse' => 'required:Goods',
-            'supplier' => 'required:Goods',
             'price' => 'required:Goods',
             'stock' => 'required:Goods',
-            'discounts' => 'required:Goods',
-            'discountsPrice' => 'required:Goods',
-            'purchase' => 'required:Goods',
-            'is_free' => 'required:Goods',
-            'img' => 'required:Goods',
         ];
     }
     /**
@@ -53,14 +47,8 @@ class StoreGoodsPost extends FormRequest
             'category.required' => '请选择商品分类',
             'brand.required' => '请选择品牌',
             'warehouse.required' => '请选择仓库',
-            'supplier.required' => '请选择供货商',
             'price.required' => '请选择当前售价',
             'stock.required' => '请输入库存',
-            'discounts.required' => '请填写优惠数量',
-            'discountsPrice.required' => '请填写优惠价格',
-            'purchase.required' => '请填写限购数量',
-            'is_free.required' => '请选择是否免运费',
-            'img.required' => '请选择图片',
 
         ];
     }

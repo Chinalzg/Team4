@@ -53,8 +53,11 @@ class CategoryController extends Controller
 
 	 public function insertCollect(Request $request)
 	 {
+
 	 	if(!$request->filled(['user_id', 'goods_id'])){
-	 		return response()->json(['code' => 403, 'message' => '用户id，商品id不能为空']);
+
+			 return response()->json(['code' => 403, 'message' => '用户id，商品id不能为空']);
+			 
 	 	}
 
 		$userResult = Collect::isCollect($request->only(['user_id', 'goods_id']));
@@ -71,11 +74,15 @@ class CategoryController extends Controller
 
 	 	return response()->json(['code' => 200, 'message' => '添加成功']);
 	 }
+<<<<<<< HEAD
+	 
+=======
 
 	 public function categoryRecommend()
 	 {
 	 	$category = Cat::getCategoryRecommend();
 	 	return response()->json(['code' => 200, 'message' => '添加成功', 'data' =>$category]);
 	 }
+>>>>>>> 61ef457631126c4774c26c308115bb52a110154c
 	
 }

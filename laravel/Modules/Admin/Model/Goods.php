@@ -53,23 +53,10 @@ class Goods extends Model
             'subtitle'=>$data['subtitle'],
             'category'=>$data['category'],
             'brand'=>$data['brand'],
-            'supplier'=>$data['supplier'],
             'image'=>$path,
             'price'=>$data['price'],
             'stock'=>$data['stock'],
-            'is_hot'=>$data['is_hot'],
-            'is_new'=>$data['is_new'],
-            'start_time'=>$data['start_time'],
-            'end_time'=>$data['end_time'],
-            'purchase'=>$data['purchase'],
-            'common'=>$data['common'],
-            'copper'=>$data['copper'],
-            'sliver'=>$data['sliver'],
-            'gold'=>$data['gold'],
-            'discounts'=>$data['discounts'],
-            'discountsPrice'=>$data['discountsPrice'],
-            'is_free'=>$data['is_free'],
-            'marketPrice'=>$data['marketPrice'],
+            'status'=>$data['status'],
             'create_time'=>time(),
             'warehouse'=>$data['warehouse']
         ];
@@ -110,24 +97,12 @@ class Goods extends Model
             'subtitle'=>$data['subtitle'],
             'category'=>$data['category'],
             'brand'=>$data['brand'],
-            'supplier'=>$data['supplier'],
             'image'=>$path,
             'price'=>$data['price'],
             'stock'=>$data['stock'],
-            'is_hot'=>$data['is_hot'],
-            'is_new'=>$data['is_new'],
-            'start_time'=>$data['start_time'],
-            'end_time'=>$data['end_time'],
-            'purchase'=>$data['purchase'],
-            'common'=>$data['common'],
-            'copper'=>$data['copper'],
-            'sliver'=>$data['sliver'],
-            'gold'=>$data['gold'],
-            'discounts'=>$data['discounts'],
-            'discountsPrice'=>$data['discountsPrice'],
-            'is_free'=>$data['is_free'],
-            'marketPrice'=>$data['marketPrice'],
-            'create_time'=>time()
+            'status'=>$data['status'],
+            'create_time'=>time(),
+            'warehouse'=>$data['warehouse']
         ];
 
         $result = DB::table('goods')->where('id','=',$id)->update($arr);
@@ -350,6 +325,28 @@ class Goods extends Model
         return $res;
     }
     
+    public static function showCity(){
+		// 查看数据
+		$info=DB::table('goods_category')->get();
+		// 递归调用 自己调用自己
+		$result = self::list_level($info,$pid=0,$level=0);
+		return $result;
+	}
+ 
+	// 写一个提供无限极分类调取的方法
+	public static function list_level($info,$pid,$level){
+		//静态定义一个数组
+		static $array=array();
+		// 循环
+		foreach($info as $k => $v){
+			if($pid==$v->pid){
+				$v->level=$level;
+				$array[]=$v;
+				self::list_level($info,$v->id,$level+1);
+			}
+		}
+		return $array;
+    }
 
 
     

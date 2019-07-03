@@ -48,7 +48,6 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '39.96.164.76'),
             'port' => env('DB_PORT', '3306'),
-
             'database' => env('DB_DATABASE', 'team4'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'root'),

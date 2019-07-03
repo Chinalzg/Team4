@@ -15,12 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login','User\UserController@login');
-
 
 Route::post('foo','User\UserController@foo');
 
 Route::post('register','Login\LoginController@register');
+<<<<<<< HEAD
+=======
 
 
 Route::get('/brandadd','Modules\Admin\Http\Controllers\BrandController@brandAdd');
@@ -32,4 +32,9 @@ Route::group(['prefix' => 'jwt'], function () {
     
 });
 
+<<<<<<< HEAD
 Route::view('/shopCart', 'shopCart');
+=======
+Route::view('/shopCart', 'shopCart');
+>>>>>>> a
+>>>>>>> 3ce4f1bb282214f046971d70a428723b86d5d83a

@@ -84,41 +84,8 @@
 											</div>
 										</div>
 
-										<div class="form-group">
-											<div class="label">
-												<label>选择供货商：</label>
-											</div>
-											<div class="field">
-												<select class="input" name="supplier">
-													<option value="">请选择供货商</option>
-													<?php foreach ($res as $k => $v): ?>
-													<option value="<?php echo $v->name ?>"><?php echo $v->name ?></option>
-													<?php endforeach;?>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="label">
-												<label>是否热门：</label>
-											</div>
-											<div class="field">
-												<select class="input" name="is_hot">
-													<option value="1">是</option>
-													<option value="0">否</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="label">
-												<label>是否上架：</label>
-											</div>
-											<div class="field">
-												<select class="input" name="is_new">
-													<option value="1">是</option>
-													<option value="0">否</option>
-												</select>
-											</div>
-										</div>
+										
+										
 										<div class="form-group">
 											<div class="label">
 												<label>本店售价：</label>
@@ -135,64 +102,19 @@
 												<input type="text" class="input" name="stock" value="<?php echo $result[0]->stock ?>"/>
 											</div>
 										</div>
-										<div class="form-group">
-											<div class="label">
-												<label>会员价格：</label>
-											</div>
-											<div class="field field-ts">
-												<label>普通用户</label><input type="text" class="input"  name="common" value="<?php echo $result[0]->common ?>"/>
-												<label>铜牌</label><input type="text" class="input" name="copper" value="<?php echo $result[0]->copper ?>"/>
-												<label>银牌</label><input type="text" class="input" name="sliver" value="<?php echo $result[0]->sliver ?>"/>
-												<label>金牌</label><input type="text" class="input" name="gold" value="<?php echo $result[0]->gold ?>"/>
-												<div class="clear"></div>
-												<p>会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="label">
-												<label>商品优惠价格：</label>
-											</div>
-											<div class="field field-ts">
-												<label>优惠数量</label><input type="text" class="input"  name="discounts" value="<?php echo $result[0]->discounts ?>"/>
-												<label>优惠价格</label><input type="text" class="input" name="discountsPrice" value="<?php echo $result[0]->discountsPrice ?>"/>
-												<div class="clear"></div>
-												<p>会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</p>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="label">
-												<label>市场售价：</label>
-											</div>
-											<div class="field">
-												<input type="text" class="input" name="marketPrice" value="<?php echo $result[0]->marketPrice ?>"/>
-											</div>
-										</div>
+										
+										
+										
+										
+
+										
 
 										<div class="form-group">
 											<div class="label">
-												<label>促销日期：</label>
-											</div>
-											<div class="field field-ts">
-												<label>开始日期</label><input type="date" class="input" style="width: 165px;"  id="dateinfo" name="start_time" value="<?php echo $result[0]->start_time ?>"/>
-												<label>结束日期</label><input type="date" class="input" style="width: 165px;" id="dateinfoa" name="end_time" value="<?php echo $result[0]->end_time ?>"/>
-												<div class="clear"></div>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="label">
-												<label>限购：</label>
-											</div>
-											<div class="field">
-												<input type="text" class="input" name="purchase" value="<?php echo $result[0]->purchase ?>"/>
-											</div>
-										</div>
-
-										<div class="form-group">
-											<div class="label">
-												<label>是否为免运费商品：</label>
+												<label>是否前台显示：</label>
 											</div>
 											<div class="field margin-small-top">
-												<label><input type="checkbox"  name="is_free" value="1"/>打勾表示此商品不会产生运费花销，否则按照正常运费计算。</label>
+												<label><input type="checkbox"  name="status" value="1"/>打勾表示此商品不会产生运费花销，否则按照正常运费计算。</label>
 											</div>
 										</div>
 

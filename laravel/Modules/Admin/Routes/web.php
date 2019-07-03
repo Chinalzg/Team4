@@ -122,8 +122,9 @@ Route::prefix('admin')->group(function() {
     Route::any('order/orderStatusUpdate', 'OrderController@OrderStatusUpdate');
     Route::any('activityInsert', 'ActivityController@activityInsert');
     Route::get('activityList', 'ActivityController@activityList');
+    
+
     // Route::get('order/orderStatus', 'OrderController@OrderStatusList');
-       Route::get('/review', 'CommentController@review');
     Route::get('/reviewshow', 'CommentController@reviewShow');
     Route::get('/reviewupdate', 'CommentController@reviewUpdate');
     Route::get('/commentReply', 'CommentController@commentReply');
@@ -149,6 +150,19 @@ Route::prefix('admin')->group(function() {
 });
 Route::get('/changeLocale/{locale}', 'AdminController@changeLocale')->middleware('setLocale');
 
+Route::prefix('index')->group(function() {
+    Route::any('/login', 'LoginController@login');
+    Route::any('/loginOut', 'LoginController@loginOut');
+    Route::any('/loginCheck', 'LoginController@loginCheck');
+    Route::any('/registered', 'LoginController@registered');
+    Route::any('/index', 'IndexController@index');
+    Route::any('/list', 'IndexController@list');
+    Route::any('/goods', 'IndexController@goods');
+    Route::any('/categoryList', 'IndexController@categoryList');
+    Route::any('/categoryShow', 'IndexController@categoryShow');
+    Route::any('/productDetailed', 'IndexController@productDetailed');
+    Route::any('/productList', 'IndexController@productList');
+});
 
 
 

@@ -28,10 +28,24 @@ class UserController extends Controller
  		{
  			return response()->json(['code' => 409, 'message' => '两次密码不一致']);
  		}
+<<<<<<< HEAD
  		
  		
  		$data = $request->only(['name', 'password', 'email']);
  		
+=======
+<<<<<<< HEAD
+ 		// $path = $request->image->store('user');
+ 		
+ 		$data = $request->only(['name', 'password', 'email']);
+ 		// $data['image'] = $path;
+=======
+ 		
+ 		
+ 		$data = $request->only(['name', 'password', 'email']);
+ 		
+>>>>>>> a
+>>>>>>> 3ce4f1bb282214f046971d70a428723b86d5d83a
  		
 		$result = U::insertUser($data);
 
@@ -77,6 +91,7 @@ class UserController extends Controller
 
 	public function login(Request $request)
 	{
+		// return $_POST;
 		if(!$request->filled(['name', 'password'])){
     		return response()->json(['code' => 403, 'message' => '用户名和密码不可为空']);
 		}
@@ -88,7 +103,21 @@ class UserController extends Controller
 		}
 		
 		$token = $this->getToken($result->id, $result->name);
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+
+		// session::put();
+		$request->session()->put('user_id',$result['id']);
+		$request->session()->put('user_name',$result['name']);
+		$request->session()->put('token',$token);
+		// session::put('name',$result['name']);
+
+=======
+    
+>>>>>>> a
+>>>>>>> 3ce4f1bb282214f046971d70a428723b86d5d83a
 		return response()->json(['code' => 200, 'message' => '登陆成功', 'data' => $token]);
 
 
