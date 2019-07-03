@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
 <script type="text/javascript" charset="UTF-8">
 <!--
  //点击效果start
@@ -46,14 +47,20 @@
 //-->
 </script>
 <body>
-<div id="app">
+<div class="app">
  <div id="header_top">
   <div id="top">
     <div class="Inside_pages">
       <div class="Collection">下午好，欢迎光临520私库商城！<em></em><a href="#">收藏我们</a></div>
 	<div class="hd_top_manu clearfix">
 	  <ul class="clearfix">
-	   <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！<a href="login" class="red">[请登录]</a> 新用户<a href="registered" class="red">[免费注册]</a></li>
+    <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临本店！
+       @if(Session::get('user_name'))
+       <a href="#" class="red">欢迎<?php echo Session::get('user_name');?>登录</a><a href="loginOut" class="red">[退出登录]</a>
+       @else
+       <a href="login" class="red">[请登录]</a> 新用户<a href="register" class="red">[免费注册]</a>
+       </li>
+       @endif
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">我的订单</a></li> 
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"> <a href="#">购物车(<b>0</b>)</a> </li>
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">联系我们</a></li>
@@ -80,6 +87,7 @@
   </div>
   <!--样式-->
 <!--顶部样式2-->
+
 <div id="header "  class="header page_style">
   <div class="logo"><a href="#"><img src="images/logo.png" /></a></div>
   <!--可修改图层-->
@@ -99,7 +107,7 @@
 	 <!--<div class="prompt"></div><div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div>-->
 	 <ul class="p_s_list">	   
 		<li>
-		    <div class="img"><img src="images/tianma.png"></div>
+		    
 		    <div class="content"><p><a href="#">产品名称</a></p><p>颜色分类:紫花8255尺码:XL</p></div>
 			<div class="Operations">
 			<p class="Price">￥55.00</p>
@@ -114,6 +122,7 @@
  </div>
 </div>
 <!--菜单导航样式-->
+
 <div id="Menu" class="clearfix">
 <div class="Inside_pages">
   <div id="allSortOuterbox">
@@ -121,143 +130,29 @@
     <div class="Category"><a href="#"><em></em>所有产品分类</a></div>
     <div class="hd_allsort_out_box_new">
 	 <!--左侧栏目开始-->
-	 <ul class="Menu_list">	
-	    <li class="name">
-		<div class="Menu_name" ><a href="product_list.html" >男装女装</a> <span>&lt;</span></div>
-		<div class="link_name">
-		  <p><a href="Product_Detailed.html">茅台</a>  <a href="#">五粮液</a>  <a href="#">郎酒</a>  <a  href="#">剑南春</a></p>
-          <p><a href="Product_Detailed.html">酱香型</a>  <a href="#">四川</a>  <a href="#">贵州</a>  <a  href="#">养生酒</a></p>
-		</div>
-		<div class="menv_Detail">
-		 <div class="cat_pannel clearfix">
-		   <div class="hd_sort_list">
-		    <dl class="clearfix" data-tpc="1">
-			 <dt>白酒</dt>
-			 <dd><a href="#">酱香型</a></dd> 
-			 <dd><a href="#">浓香型</a></dd> 
-			 <dd><a href="#">清香型</a></dd> 
-			 <dd><a href="#">绵柔香型</a></dd> 
-			 <dd><a href="#">老白干香型</a></dd> 
-			 <dd><a href="#">凤香型</a></dd> 
-			 <dd><a href="#">馥香型</a></dd> 
-			 <dd><a href="#">米香型</a></dd> 
-			 <dd><a href="#">青稞清香型</a></dd> 
-			 <dd><a href="#">董香型</a></dd> 
-			 <dd><a href="#">特香型</a></dd> 
-			 <dd><a href="#">芝麻香型</a></dd>
-			</dl>
-			 <dl class="clearfix" data-tpc="2">
-			 <dt>葡萄酒</dt>
-			 <dd><a href="#">酱香型</a></dd> 
-			 <dd><a href="#">浓香型</a></dd> 
-			 <dd><a href="#">清香型</a></dd> 
-			 <dd><a href="#">绵柔香型</a></dd> 
-			 <dd><a href="#">老白干香型</a></dd> 
-			 <dd><a href="#">凤香型</a></dd> 
-			 <dd><a href="#">馥香型</a></dd> 
-			 <dd><a href="#">米香型</a></dd> 
-			 <dd><a href="#">青稞清香型</a></dd> 
-			 <dd><a href="#">董香型</a></dd> 
-			 <dd><a href="#">特香型</a></dd> 
-			 <dd><a href="#">芝麻香型</a></dd>
-			</dl>
-			 <dl class="clearfix" data-tpc="3">
-			 <dt>洋酒</dt>
-			 <dd><a href="#">酱香型</a></dd> 
-			 <dd><a href="#">浓香型</a></dd> 
-			 <dd><a href="#">清香型</a></dd> 
-			 <dd><a href="#">绵柔香型</a></dd> 
-			 <dd><a href="#">老白干香型</a></dd> 
-			 <dd><a href="#">凤香型</a></dd> 
-			 <dd><a href="#">馥香型</a></dd> 
-			 <dd><a href="#">米香型</a></dd> 
-			 <dd><a href="#">青稞清香型</a></dd> 
-			 <dd><a href="#">董香型</a></dd> 
-			 <dd><a href="#">特香型</a></dd> 
-			 <dd><a href="#">芝麻香型</a></dd>
-			</dl>
-			 <dl class="clearfix" data-tpc="4">
-			 <dt>啤酒/养生酒</dt>
-			 <dd><a href="#">酱香型</a></dd> 
-			 <dd><a href="#">浓香型</a></dd> 
-			 <dd><a href="#">清香型</a></dd> 
-			 <dd><a href="#">绵柔香型</a></dd> 
-			 <dd><a href="#">老白干香型</a></dd> 
-			 <dd><a href="#">凤香型</a></dd> 
-			 <dd><a href="#">馥香型</a></dd> 
-			 <dd><a href="#">米香型</a></dd> 
-			 <dd><a href="#">青稞清香型</a></dd> 
-			 <dd><a href="#">董香型</a></dd> 
-			 <dd><a href="#">特香型</a></dd> 
-			 <dd><a href="#">芝麻香型</a></dd>
-			</dl>
-		   </div><div class="Brands">
-		   <a href="#"><img src="Products/p_logo_1.jpg" /></a>
-		   <a href="#"><img src="Products/p_logo_2.jpg" /></a>
-		   <a href="#"><img src="Products/p_logo_3.jpg" /></a>
-		   <a href="#"><img src="Products/p_logo_4.jpg" /></a>
-		   <a href="#"><img src="Products/p_logo_5.jpg" /></a>	   
-		  </div>
-		  </div>
-		  <!--品牌-->		  
-		</div>		 
+	 <ul class="Menu_list">
+
+   <li class="name" v-for="site in res">
+		<div class="Menu_name" v-if="site.level==0">
+    <!-- <a :href="'productDetailed?id='+site.id+''"> -->
+    <a :href="'productList?id='+site.id+''" >@{{site.name}}</a> 
+    <span>&lt;</span>
+    </div>
+		<div class="link_name" v-else-if="site.level!=0">
+    <a :href="'productList?id='+site.id+''" >@{{site.name}}</a> 
+		</div>	 
 		</li>
-		<li class="name">
-		<div class="Menu_name"><a href="#" >个性护理</a><span>&lt;</span></div>
-		<div class="link_name">
-		 <a href="Product_Detailed.html">饼干蛋糕</a><a href="#">糖果</a><a href="#">巧克力</a><a href="#">坚果</a>
-         <a href="Product_Detailed.html">饼干蛋糕</a><a href="#">糖果</a><a href="#">巧克力</a><a href="#">坚果</a>
-		</div>
-		<div class="menv_Detail">
-		 <div class="cat_pannel clearfix">		   
-		  </div>
-		</div>		
-		</li>
-		<li class="name">
-		<div class="Menu_name"><a href="#" >鞋子箱包</a><span>&lt;</span></div>
-		<div class="link_name">
-		<a href="#">休闲零食</a><a href="#">坚果炒货</a><a href="#">饼干蛋糕</a>
-        <a href="#">饼干蛋糕</a><a href="#">糖果</a><a href="#">巧克力</a><a href="#">坚果</a>
-		</div>
-		<div class="menv_Detail">
-		 <div class="cat_pannel clearfix">		   
-		  </div>
-		</div>	
-		</li>
-		<li class="name">
-		<div class="Menu_name"><a href="#" >食品保健</a><span>&lt;</span></div>
-		<div class="link_name">
-		<a href="#">休闲零食</a><a href="#">坚果炒货</a><a href="#">饼干蛋糕</a>
-        <a href="#">饼干蛋糕</a><a href="#">糖果</a><a href="#">巧克力</a><a href="#">坚果</a>
-		</div>
-		<div class="menv_Detail">
-		 <div class="cat_pannel clearfix">		    
-		  </div>
-		</div>	
-		</li>
-		<li class="name">
-		<div class="Menu_name"><a href="#" >综合百货</a><span>&lt;</span></div>
-		<div class="link_name">
-		<a href="#">休闲零食</a><a href="#">坚果炒货</a><a href="#">饼干蛋糕</a>
-        <a href="#">饼干蛋糕</a><a href="#">糖果</a><a href="#">巧克力</a><a href="#">坚果</a>
-		</div>
-		<div class="menv_Detail">
-		 <div class="cat_pannel clearfix">		    
-		  </div>
-		</div>	
-		</li>
-        
-		<li class="name customize">
-		<div class="Menu_name"><a href="#" >私人定制</a><span>&lt;</span></div>		
-		</li>			
+
 	</ul>	
 	</div>		
 	</div>
-	<script>$("#allSortOuterbox").slide({ titCell:".Menu_list li",mainCell:".menv_Detail",	});</script>
+
 	<!--菜单栏-->
 	<div class="Navigation" id="Navigation">
-		 <ul class="Navigation_name">
-			<li v-for="site in msg"><a href="">@{{site.name}}</a></li>
+         <ul class="Navigation_name">
+			<li v-for="site in msg">
+      <a :href="'productList?id='+site.id+''" >@{{site.name}}</a> 
+      </li>
 		 </ul >			 
 		</div>
 	<script>$("#Navigation").slide({titCell:".Navigation_name li"});</script>		
@@ -273,7 +168,7 @@
 			</div>
 			<div class="bd">
 				<ul>
-				
+					<li><a href="#" target="_blank"><div style="background:url(images/520_AD_03.jpg) no-repeat; background-position:center; width:100%; height:645px;"></div></a></li>
 					<li><a href="#" target="_blank"><div style="background:url(images/1234_03.jpg) no-repeat; background-position:center; width:100%; height:645px;"></div></a></li>
 					<li><a href="#" target="_blank"><div style="background:url(images/AD-03.jpg) no-repeat; background-position:center; width:100%; height:645px;"></div></a></li>
 				</ul>
@@ -308,15 +203,209 @@
 		jQuery(".slideBox").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,autoPage:true,delayTime:500,interTime:5000});
 		</script>
  </div>
-
+<div class="index_style clearfix" id="service_list">
+  <div class="service_style">
+    <ul class="service_list">
+     <li class="xianduan"><a href="#"><em class="iconfont icon-plane"></em><h2>机票</h2></a></li>
+     <li><a href="#"><em class="iconfont icon-train"></em><h2>火车票</h2></a></li>
+     <li><a href="#"><em class="iconfont icon-friendfill"></em><h2>便民服务</h2></a></li>
+     <li><a href="#"><em class="iconfont icon-jianzhutubiao"></em><h2>同城</h2></a></li>
+     <li><a href="#"><em class="iconfont icon-jiudian"></em><h2>酒店</h2></a></li>
+     <li><a href="#"><em class="iconfont icon-chongzhi"></em><h2>充值</h2></a></li>
+     <li><a href="#"><em class="iconfont icon-car"></em><h2>交通违章</h2></a></li>
+     <li><a href="#"><em class="iconfont icon-xiangzi"></em><h2>成人用品</h2></a></li>
+    </ul>
+  </div>
+</div>
 <div class="index_style clearfix">
-
-
-
  <!--推荐图层样式-->
-  
+  <div class="recommend">
+   <div class="recommend_bg"></div>
+   <div class="list">
+     <div class="picScroll">
+        <div class="hd">
+        <a class="prev" href="javascript:void(0)">&gt;</a>
+		<a class="next" href="javascript:void(0)">&lt;</a>
+        </div>
+        <div class="bd">
+          <ul>
+           <li class="recommend_info">
+            <a href="#" class="img_link"><img src="Products/x-1.jpg"  width="130px" height="130px"/></a>
+            <div class="content">
+             <a href="#" class="title_name">有货潮牌Life After Life/男MA-1飞行夹克</a>
+             <h2><i>￥</i>124.00</h2>          
+            </div>
+             <a href="#" class="buy_btn"> 立即购买</a>
+           </li>
+             <li class="recommend_info">
+            <a href="#" class="img_link"><img src="Products/x-2.jpg"  width="130px" height="130px"/></a>
+            <div class="content">
+             <a href="#" class="title_name">烟花烫女装气质修身显瘦连衣裙套装</a>
+             <h2><i>￥</i>124.00</h2>          
+            </div>
+             <a href="#" class="buy_btn"> 立即购买</a>
+           </li>
+             <li class="recommend_info">
+            <a href="#" class="img_link"><img src="Products/x-3.jpg"  width="130px" height="130px"/></a>
+            <div class="content">
+             <a href="#" class="title_name">SK-II 肌底晶透护肤礼盒（神仙水 补水保湿 精华液 乳液 套装）</a>
+             <h2><i>￥</i>124.00</h2>          
+            </div>
+             <a href="#" class="buy_btn"> 立即购买</a>
+           </li>
+             <li class="recommend_info">
+            <a href="#" class="img_link"><img src="Products/x-4.jpg"  width="130px" height="130px"/></a>
+            <div class="content">
+             <a href="#" class="title_name">荣耀 6 Plus (PE-TL10) 3GB内存增强版 金色 移动联通双4G手机 双卡</a>
+             <h2><i>￥</i>1124.00</h2>          
+            </div>
+             <a href="#" class="buy_btn"> 立即购买</a>
+           </li>
+            <li class="recommend_info ">
+            <a href="#" class="img_link"><img src="Products/x-5.jpg"  width="130px" height="130px"/></a>
+            <div class="content">
+             <a href="#" class="title_name">荣耀 6 Plus (PE-TL10) 3GB内存增强版 金色 移动联通双4G手机 双卡</a>
+             <h2><i>￥</i>1124.00</h2>          
+            </div>
+             <a href="#" class="buy_btn"> 立即购买</a>
+           </li>
+             <li class="recommend_info ">
+            <a href="#" class="img_link"><img src="Products/x-6.jpg"  width="130px" height="130px"/></a>
+            <div class="content">
+             <a href="#" class="title_name">荣耀 6 Plus (PE-TL10) 3GB内存增强版 金色 移动联通双4G手机 双卡</a>
+             <h2><i>￥</i>1124.00</h2>          
+            </div>
+             <a href="#" class="buy_btn"> 立即购买</a>
+           </li>
+            <li class="recommend_info ">
+            <a href="#" class="img_link"><img src="Products/x-7.jpg"  width="130px" height="130px"/></a>
+            <div class="content">
+             <a href="#" class="title_name">荣耀 6 Plus (PE-TL10) 3GB内存增强版 金色 移动联通双4G手机 双卡</a>
+             <h2><i>￥</i>1124.00</h2>          
+            </div>
+             <a href="#" class="buy_btn"> 立即购买</a>
+           </li>
+             <li class="recommend_info">
+            <a href="#" class="img_link"><img src="Products/x-8.jpg"  width="130px" height="130px"/></a>
+            <div class="content">
+             <a href="#" class="title_name">荣耀 6 Plus (PE-TL10) 3GB内存增强版 金色 移动联通双4G手机 双卡</a>
+             <h2><i>￥</i>1124.00</h2>          
+            </div>
+             <a href="#" class="buy_btn"> 立即购买</a>
+           </li>
+          </ul>
+        </div>			
+     </div>
+     <script>jQuery(".picScroll").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:4});</script>
+   </div>
+  </div>
   <!--品牌列表样式-->
-
+  <div class="Brand clearfix">
+   <div class="title_name"><span>品牌库</span><span class="English">BRANDS LIBRARIES</span></div>
+   <div class="img_title">
+     <div class="img_title_name">
+      <h1>大品牌，大智慧</h1>
+      <h2>优质品牌，精选品牌</h2>
+     </div>  
+     </div>
+    <div class="Brand_style">
+     <div class="hd">
+      <ul>
+       <li>女装品牌</li>
+       <li>男装品牌</li>
+       <li>外国品牌</li>
+       <li>国内品牌</li>
+      </ul>
+     </div>
+     <div class="bd">
+      <ul>
+       <li>
+       <a href="#"><img src="Brand/p-1.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-2.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-3.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-4.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-5.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-6.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-7.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-8.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-9.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-10.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-11.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-12.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-13.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-14.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-15.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-16.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-17.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-18.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-19.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-20.jpg" width="125" height="38"/></a>
+        <a href="#"><img src="Brand/p-11.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-12.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-13.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-14.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-15.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-16.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-17.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-18.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-19.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-20.jpg" width="125" height="38"/></a>
+       </li>
+      </ul>
+      <ul>
+       <a href="#"><img src="Brand/p-1.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-2.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-3.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-4.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-5.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-6.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-7.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-8.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-9.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-10.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-11.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-12.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-13.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-14.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-15.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-16.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-17.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-18.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-19.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-20.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-11.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-12.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-13.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-14.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-15.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-16.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-17.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-18.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-19.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-20.jpg" width="125" height="38"/></a>    
+      </ul>
+      <ul>
+        <a href="#"><img src="Brand/p-15.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-16.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-17.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-18.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-19.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-20.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-11.jpg"  width="125" height="38"/></a>
+      </ul>
+      <ul>
+        <a href="#"><img src="Brand/p-15.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-16.jpg"  width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-17.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-18.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-19.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-20.jpg" width="125" height="38"/></a>
+       <a href="#"><img src="Brand/p-11.jpg"  width="125" height="38"/></a>
+      </ul>
+     </div>
+    </div>
+    <script>jQuery(".Brand_style").slide({trigger:"click"});</script>
+  </div>
   <!--产品版块样式图层-->
   <div class="Product_area clearfix">
    <div class="area_title"><div class="name"><span class="floors">1F</span>男装女装</div></div>
@@ -324,15 +413,12 @@
     <div class="Left_side">
      <ul>
 
-
-		 <!-- <li v-for="site in msg"><a href="">@{{site.name}}</a></li> -->
-      <li v-for="site in list">
-			<a href="#">
-			<img :src="site.image" style="width:220px;height:220px;"/>
-			</a>
-			</li>
-
-
+     <!-- <li v-for="site in msg"><a href="">@{{site.name}}</a></li> -->
+     <li v-for="site in list">
+      <a :href="'productDetailed?id='+site.id+''">
+      <img :src="site.image" style="width:220px;height:220px;"/>
+      </a>
+  	 </li>
 
      </ul>
     </div>
@@ -354,37 +440,129 @@
 		</script>
      <div class="Left_side">
      <ul>
-
-		 <li v-for="site in list">
-			<a href="#">
-			<img :src="site.image" style="width:220px;height:220px;"/>
-			</a>
-			</li>
-
+     <li v-for="site in list">
+      <a :href="'productDetailed?id='+site.id+''">
+      <img :src="site.image" style="width:220px;height:220px;"/>
+      </a>
+  	 </li>
      </ul>
     </div>
-    <div class="advertising">
-     <a href="#"><img src="Products/AD-7.jpg"  width="219" height="150"/></a>
-     <a href="#"><img src="Products/AD-8.jpg" width="219" height="150"/></a>
-     <a href="#" class="da_AD"><img src="Products/AD-9.jpg" width="318" height="150"/></a>
-     <a href="#"><img src="Products/AD-10.jpg" width="219" height="150"/></a>
-     <a href="#"><img src="Products/AD-7.jpg" width="219" height="150"/></a>
-    </div>
+    
     <!--品牌-->
-    <div class="Brand_Gallery">
-     <a href="#"><img src="Brand/p-1.jpg"  width="120" height="32"/></a>
-     <a href="#"><img src="Brand/p-4.jpg"  width="120" height="32"/></a>
-     <a href="#"><img src="Brand/p-6.jpg"  width="120" height="32"/></a>
-     <a href="#"><img src="Brand/p-11.jpg"  width="120" height="32"/></a>
-     <a href="#"><img src="Brand/p-14.jpg"  width="120" height="32"/></a>
-     <a href="#"><img src="Brand/p-17.jpg"  width="120" height="32"/></a>
-     <a href="#"><img src="Brand/p-19.jpg"  width="120" height="32"/></a>
-     <a href="#"><img src="Brand/p-13.jpg"  width="120" height="32"/></a>
-    </div>
+    
    </div>
   </div>
+    <!--产品版块样式图层-->
+    <!--产品版块样式图层-->
+
+     <!--产品版块样式图层-->
+     
+  <!--热销-->
+<div id="showcase" class="advanced">
+	<div id="guessyou" class="m"><div class="mt"><h2>猜你喜欢</h2><a href="javascript:;" class="extra">更多</a></div>
+    <div class="mc"><div class="spacer"><i></i></div>
+    <ul id="lists">        
+    <li class="fore1">           
+     <div class="p-img">
+     <a data-clk="" href="" target="_blank"><img data-lazy-img="done" width="130" height="130" title="夏普（SHARP）LCD-50V3A 50英寸安卓智能液晶电视（黑色）" src="Products/product_img.jpg" class=""></a>
+     </div>                
+     <div class="p-info">               
+      <div class="p-name">
+      <a data-clk="" href="" target="_blank" title="夏普（SHARP）LCD-50V3A 50英寸安卓智能液晶电视（黑色）">夏普（SHARP）LCD-50V3A 50英寸安卓智能液晶电视（黑色）</a></div>
+      <div class="p-price" data-lazyload-fn="done"><span class="left"><i>¥</i>48.00</span><span class="Original_Price">45.9</span></div>            
+      </div> 
+      <div class="Detailed" style="display: none;">
+	   <div class="content">
+		  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
+		  </div>
+	   </div>       
+      </li>        
+      <li class="fore2">           
+       <div class="p-img"><a data-clk="" href="h" target="_blank">
+       <img data-lazy-img="done" width="130" height="130" title="海信（Hisense）LED55EC520UA 55英寸 VIDAA3 14核 炫彩4K智能电视(黑色)" src="Products/product_img1.jpg" class=""></a></div>              
+         <div class="p-info">              
+           <div class="p-name">
+           <a data-clk="" href="" target="_blank" title="海信（Hisense）LED55EC520UA 55英寸 VIDAA3 14核 炫彩4K智能电视(黑色)">海信（Hisense）LED55EC520UA 55英寸 VIDAA3 14核 炫彩4K智能电视(黑色)</a></div>
+           <div class="p-price"><span class="left"><i>¥</i>48.00</span><span class="Original_Price">45.9</span></div>            
+       </div> 
+        <div class="Detailed" style="display: none;">
+	   <div class="content">
+		  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
+		  </div>
+	   </div>       
+        </li>        
+        <li class="fore3">            
+        <div class="p-img">
+        <a data-clk="" href="" target="_blank">
+        <img data-lazy-img="done" width="130" height="130" title="联想 扬天W4090V 台式税控专用电脑（G3260双核 4G1T DVD WIN7) 标配主机(无显示器)" src="Products/product_img2.jpg" class=""></a></div>             
+        <div class="p-info">               
+         <div class="p-name">
+         <a href="" target="_blank" title="联想 扬天W4090V 台式税控专用电脑（G3260双核 4G1T DVD WIN7) 标配主机(无显示器)">联想 扬天W4090V 台式税控专用电脑（G3260双核 4G1T DVD WIN7) 标配主机(无显示器)</a></div>
+           <div class="p-price"><span class="left"><i>¥</i>48.00</span><span class="Original_Price">45.9</span></div>       
+             </div> 
+              <div class="Detailed">
+	   <div class="content">
+		  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
+		  </div>
+	   </div>     
+           </li>        
+           <li class="fore4">         
+            <div class="p-img">
+             <a href="" target="_blank">
+             <img data-lazy-img="done" width="130" height="130" title="联想（Lenovo） 扬天R4905d 台式电脑 （G1820 4G 500G） 商用电脑 20英寸普通LED屏" src="Products/product_img3.jpg" class=""></a></div>
+             <div class="p-info">             
+              <div class="p-name">
+              <a href="" target="_blank" title="联想（Lenovo） 扬天R4905d 台式电脑 （G1820 4G 500G） 商用电脑 20英寸普通LED屏">联想（Lenovo） 扬天R4905d 台式电脑 （G1820 4G 500G） 商用电脑 20英寸普通LED屏</a></div>
+                 <div class="p-price"><span class="left"><i>¥</i>48.00</span><span class="Original_Price">45.9</span></div>          
+          </div>  
+           <div class="Detailed">
+	   <div class="content">
+		  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
+		  </div>
+	   </div>    
+           </li>       
+            <li class="fore5">       
+            <div class="p-img">
+            <a data-clk="" href="" target="_blank"><img data-lazy-img="done" width="130" height="130" title="金正（NINTAUS）韩式 电火锅 多用锅 家用 5L" src="Products/product_img4.jpg" class=""></a></div>
+                 <div class="p-info">                
+                  <div class="p-name">
+                  <a href="" target="_blank" title="金正（NINTAUS）韩式 电火锅 多用锅 家用 5L">金正（NINTAUS）韩式 电火锅 多用锅 家用 5L</a>
+                  </div>
+                  <div class="p-price"><span class="left"><i>¥</i>48.00</span><span class="Original_Price">45.9</span></div>          
+          </div>   
+           <div class="Detailed">
+	   <div class="content">
+		  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
+		  </div>
+	   </div>  
+           </li>       
+         <li class="fore6">           
+          <div class="p-img">
+          <a data-clk="" href="" target="_blank">
+          <img data-lazy-img="done" width="130" height="130" title="洗颜专科 柔澈泡沫 洁面乳 120g（资生堂授权）" src="Products/product_img5.jpg" class=""></a>  
+          </div>          
+         <div class="p-info">                
+        <div class="p-name">
+        <a data-clk="" href="#" target="_blank" title="洗颜专科 柔澈泡沫 洁面乳 120g（资生堂授权）">洗颜专科 柔澈泡沫 洁面乳 120g（资生堂授权）</a></div>
+        <div class="p-price"><span class="left"><i>¥</i>48.00</span><span class="Original_Price">45.9</span></div>     
+         </div>
+          <div class="Detailed">
+	   <div class="content">
+		  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
+		  </div>
+	   </div>        
+        </li>
+       </ul>
+      </div>
+     </div>
+     </div>
+</div>
   <!--底部样式-->
 
+  <!--底部-->
+
+  </div>
+ </div>
  <!--底部样式-->
  <div class="footer">
   <div class="footerbox clearfix">
@@ -435,7 +613,7 @@
 					<li>
 						<div class="pic"><a href="" target="_blank"><img src="images/pic1.jpg" /></a></div>
                           <!--<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图1</a></div>-->					
-          </li>
+                    </li>
 					<li>
 						<div class="pic"><a href="" target="_blank"><img src="images/pic2.jpg" /></a></div>
 						<!--<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图2</a></div>-->
@@ -448,22 +626,8 @@
 						<div class="pic"><a href="" target="_blank"><img src="images/pic4.jpg" /></a></div>
 						
 					</li>
-					<li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic5.jpg" /></a></div>
-						
-					</li>
-					<li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic6.jpg" /></a></div>
-						
-					</li>
-                    <li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic6.jpg" /></a></div>
-						
-					</li>
-                    <li>
-						<div class="pic"><a href="" target="_blank"><img src="images/pic6.jpg" /></a></div>
-						
-					</li>
+					
+                    
 				</ul>
 			</div>
 		</div>
@@ -494,14 +658,14 @@
       <div class="ServiceBox">
         <div class="bjfffs"></div>
         <dl onclick="javascript:;">
-		    <dt><img src="images/Service1.png"></dt>
+		    
 		       <dd><strong>QQ客服1</strong>
 		          <p class="p1">9:00-22:00</p>
 		           <p class="p2"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456&amp;site=DGG三端同步&amp;menu=yes">点击交谈</a></p>
 		          </dd>
 		        </dl>
 				<dl onclick="javascript:;">
-		          <dt><img src="images/Service1.png"></dt>
+		          
 		          <dd> <strong>QQ客服1</strong>
 		            <p class="p1">9:00-22:00</p>
 		            <p class="p2"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456&amp;site=DGG三端同步&amp;menu=yes">点击交谈</a></p>
@@ -514,26 +678,28 @@
 			<div class="cartBox">
        		<div class="bjfff"></div>
 			<div class="QR_code">
-			 <p><img src="images/erweim.jpg" width="150px" height="150px" style=" margin-top:10px;" /></p>
+			 
 			 <p>微信扫一扫，关注我们</p>
 			</div>		
 			</div>
 			</li>
 
-      <li class="fixeBoxLi Home"> <a href="./"> <span class="fixeBoxSpan iconfont  icon-collect"></span> <strong>收藏</strong> </a> </li>
-      <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan iconfont icon-top"></span> <strong>返回顶部</strong> </li>
-    </ul>
-  </div>
+    <li class="fixeBoxLi Home"> <a href="./"> <span class="fixeBoxSpan iconfont  icon-collect"></span> <strong>收藏</strong> </a> </li>
+    <li class="fixeBoxLi BackToTop"> <span class="fixeBoxSpan iconfont icon-top"></span> <strong>返回顶部</strong> </li>
+  </ul>
+</div>
 </div>
 </body>
 </html>
 <script>
      window.onload = function(){
         var vm = new Vue({
-            el:'#app',
+            el:'.app',
             data:{
 								msg:[],
-								list:[],
+                list:[],
+                data:[],
+                res:[],
             },
             mounted:function () {
 								this.get();
@@ -542,7 +708,7 @@
                 get:function(){
                     //发送get请求
                     this.$http.get("http://www.shop.com/index/list").then(function(res){
-                      console.log(res.body.data);
+                      // console.log(res.body.data);
                       // console.log(body);
                         this.msg=res.body.data;
 
@@ -551,9 +717,29 @@
 										});
 										
 										this.$http.get("http://www.shop.com/index/goods").then(function(result){
-                      console.log(result.body.data);
+                      // console.log(result.body.data);
                       // console.log(body);
 												this.list=result.body.data;
+												// console.log(this.list);
+
+                    },function(){
+                        console.log('请求失败');
+                    });
+
+                    this.$http.get("http://www.shop.com/index/categoryList").then(function(result){
+                      // console.log(result.body.data);
+                      // console.log(body);
+												this.data=result.body.data;
+												// console.log(this.list);
+
+                    },function(){
+                        console.log('请求失败');
+                    });
+
+                    this.$http.get("http://www.shop.com/index/categoryShow").then(function(result){
+                      console.log(result.body.data);
+                      // console.log(body);
+												this.res=result.body.data;
 												// console.log(this.list);
 
                     },function(){
@@ -567,4 +753,3 @@
     }
 
 </script>
-

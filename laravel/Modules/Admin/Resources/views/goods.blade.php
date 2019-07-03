@@ -106,21 +106,11 @@
       <tr>
         <th width="100" style="text-align:left; padding-left:20px;">商品编号</th>
         <th>商品名称</th>
-        <th>副标题</th>
         <th>货号</th>
         <th>所属分类</th>
-        <th>所属品牌</th>
-        <th>所属供货商</th>
-        <th>所属仓库</th>
         <th>商品封面图</th>
-        <th>当前售价</th>
-        <th>市场售价</th>
-        <th>当前库存</th>
-        <th>是否免运费</th>
-        <th>热门</th>
-        <th>上架</th>
         <th>创建时间</th>
-        <th>审核状态</th>
+        <th>是否前台显示</th>
         <th width="310">操作</th>
       </tr>
       <?php foreach ($res as $k => $v): ?>
@@ -128,21 +118,17 @@
         <tr>
           <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" /><?php echo $v->id ?></td>
           <td><?php echo $v->name ?></td>
-          <td><?php echo $v->subtitle ?></td>
           <td><?php echo $v->number ?></td>
           <td><?php echo $v->category ?></td>
-          <td><?php echo $v->brand ?></td>
-          <td><?php echo $v->supplier ?></td>
-          <td><?php echo $v->warehouse ?></td>
           <td> <img src="<?php echo $v->image ?>" alt="" style="width:50px;height:50px;"></td>
-          <td><?php echo $v->price ?></td>
-          <td><?php echo $v->marketPrice ?></td>
-          <td><?php echo $v->stock ?></td>
-          <td><?php echo $v->is_free ?></td>
-          <td><?php echo $v->is_hot ?></td>
-          <td><?php echo $v->is_new ?></td>
           <td><?php echo date('Y-m-d H:i:s',$v->create_time);?></td>
-          <td><?php echo $v->status ?></td>
+          <td>
+          @if ($v->status === 1)
+          显示
+          @else
+          不显示
+          @endif
+          </td>
           <td>
           <div class="button-group">
           <a class="button border-yellow" href="goodsUpdate?id=<?php echo $v->id ?>"><span class="icon-edit (alias)"></span>编辑</a>

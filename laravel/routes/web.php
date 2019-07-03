@@ -19,4 +19,7 @@ Route::get('/', function () {
 Route::post('foo','User\UserController@foo');
 
 
+
+
+
 Route::post('register','Login\LoginController@register');

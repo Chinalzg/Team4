@@ -29,9 +29,11 @@ class LoginController extends Controller
 
         // }
     }
-    public function loginCheck()
+    public function loginOut(Request $request)
     {
-        return $_POST;
+        $request->session()->flush();
+
+        return view("admin::login.login");
     }
     /**
      * Undocumented function

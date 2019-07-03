@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf_token" id="token" content="{{csrf_token()}}">
     <title>电子商城后台</title>
     <link rel="stylesheet" href="{{ URL::asset('static/css/pintuer.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('static/css/admin.css') }}">
     <script src="{{ URL::asset('static/js/jquery.js') }}"></script>
     <script src="{{ URL::asset('static/js/pintuer.js') }}"></script>
+
     {{-- Laravel Mix - CSS File --}}
     {{-- <link rel="stylesheet" href="{{ mix('css/admin.css') }}"> --}}
 </head>
@@ -33,14 +33,16 @@
                         </div>
                         <div class="form-group">
                             <div class="field field-icon-right">
-                                <input type="hidden" name="_token" value="{{csrf_token()}}">
                                 <input type="password" class="input input-big" id="pwd" name="pwd" placeholder="登录密码" data-validate="required:请填写密码" />
                                 <span class="icon icon-key margin-small"></span>
                             </div>
                         </div>
                     </div>
 
-                    <div style="padding:30px;"><input type="button" id="btn" class="button button-block bg-main text-big input-big" value="登录"></div>
+                    <div style="padding:30px;">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
+                        <input value="登录" id="TencentCaptcha" data-cbfn="callback" data-appid="2008769063" class="button button-block bg-main text-big input-big" type="button">
+                    </div>
                 </div>
             </form>
         </div>
@@ -48,22 +50,32 @@
 </div>
 </body>
 </html>
+<script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
 <script>
-    $(document).on('click','#btn',function () {
+    window.callback = function(res){
         var name=$('#uname').val();
         var pwd=$('#pwd').val();
-        $.ajax({
-            type:"post",
-            url:"{{'select'}}",
-            data:{
-                name:name,
-                pwd:pwd,
-
-            },
-            dataType: "json",
-            success:function (e) {
-                console.log(e);
-            }
-        })
-    })
+        // res（用户主动关闭验证码）= {ret: 2, ticket: null}
+        // res（验证成功） = {ret: 0, ticket: "String", randstr: "String"}
+        if(res.ret === 0){
+            $.ajax({
+                
+                type:"post",
+                url:"{{'login'}}",
+                data:{
+                    name:name,
+                    pwd:pwd,
+                    _token:'{{csrf_token()}}'
+                },
+                dataType: "json",
+                success:function (e) {
+                    if(e.code==200){
+                        location.href="{{'select'}}";
+                    }else{
+                        alert(e.msg);
+                    }
+                }
+            })
+        }
+    };
 </script>

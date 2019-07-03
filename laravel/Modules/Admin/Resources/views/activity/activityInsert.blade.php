@@ -45,7 +45,7 @@
                       <div class="field">
                         <select class="input" name="goods_id">
                           @foreach($goods as $k=>$g)
-                          <option value="{{$g->id}}">{{$g->goods_name}}</option>
+                          <option value="{{$g->id}}">{{$g->name}}</option>
                           @endforeach
                         </select>
                       </div>

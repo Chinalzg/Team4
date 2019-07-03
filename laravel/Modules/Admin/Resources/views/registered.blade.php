@@ -31,14 +31,14 @@
 	    <div class="item"><label class="rgister-label">用&nbsp;&nbsp;户&nbsp;&nbsp;名：</label>
 			<input name="" type="text"  class="text" v-model="registerModel.name"/><b>*</b></div>
 		<div class="item"><label class="rgister-label" >密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
-		<input name="" type="password"  class="text" v-model="registerModel.pwd"/><b>*</b></div> 
+		<input name="" type="password"  class="text" v-model="registerModel.password"/><b>*</b></div> 
 	    <div class="Password_qd"><ul><li class="r">弱</li><li class="z">中</li><li class="q">强</li></ul></div>
 		<div class="item"><label class="rgister-label " >确认密码：</label>
-		<input name="" type="password"  class="text" /><b>*</b></div>
+		<input name="" type="password"  class="text" v-model="registerModel.surePassword" /><b>*</b></div>
 	    <div class="item"><label class="rgister-label" >电子邮箱：
 			</label><input name="" type="text"  class="text" v-model="registerModel.email"/><b>*</b></div> 
 	 
-	    <div class="item "><label  class="rgister-label ">验&nbsp;证&nbsp;码：</label><input name="" type="text"  class="Recommend_text" /></div>
+	   
 		<div class="item-ifo">
                     <input type="checkbox" class="checkbox left" checked="checked" id="readme" onclick="agreeonProtocol();">
                     <label for="protocol" class="left">我已阅读并同意<a href="#" class="blue" id="protocol">《福际商城用户注册协议》</a></label>
@@ -53,11 +53,7 @@
    </div>
 </div>
 <!--底部样式-->
- <div class="bottom_footer">
-   <p><a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">商家入驻</a> | <a href="#">法律申明</a> | <a href="#">友情链接</a>  </p>
-	 <p>Copyright©2014四川金祥保险销售有限公司.All Rights Reserved. </p>
-	 <p>川ICP备09150084号</p>
-   </div>
+
 </div>
 </body>
 </html>
@@ -65,10 +61,11 @@
 var demo = new Vue({
 	el: '#app',
 	data: {
-		registerUrl: 'http://www.shop.com/index/loginCheck',
+		registerUrl: 'http://www.shop.com/api/register',
 		registerModel: {
 			name: '',
-			pwd: '',
+			password: '',
+			surePassword:'',
 			email: '',
 			_token: '{{csrf_token()}}'
 		},
@@ -86,6 +83,8 @@ var demo = new Vue({
 				data: vm.registerModel,
 				success: function(data) {
 					console.log(data);
+					alert("注册成功");
+					location.href="login";
 					vm.msg = '注册成功！'
 				},
 				error: vm.requestError

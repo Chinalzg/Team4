@@ -32,7 +32,7 @@
 	    <div class="Prompt">账号密码不能为空！ </div>
 	    <div class="form clearfix">
 	     <div class="item item-fore1"><label for="loginname" class="login-label name-label"></label>
-			 <input name="" type="text"  class="text" placeholder="请输入用户" v-model="loginModel.username"/>
+			 <input name="" type="text"  class="text" placeholder="请输入用户" v-model="loginModel.name"/>
 		 </div>
 		 <div class="item item-fore2"><label for="nloginpwd" class="login-label pwd-label" ></label>
 		 <input name="" type="password"  class="text" placeholder="用户密码" v-model="loginModel.password"/>
@@ -58,12 +58,11 @@
 var demo = new Vue({
 	el: '#app',
 	data: {
-		loginUrl: 'http://www.shop.com/index/loginCheck',
+		loginUrl: 'http://www.shop.com/api/login',
 		logoutUrl: 'http://localhost:10648/api/Account/Logout',
 		loginModel: {
-			username: '',
+			name: '',
 			password: '',
-			grant_type: 'password',
 			_token: '{{csrf_token()}}'
 		},
 		msg: '',
@@ -86,11 +85,18 @@ var demo = new Vue({
 				data: vm.loginModel,
 				success: function(data) {
           console.log(data);
-					vm.msg = '登录成功！'
-					location.href="index";
+
+					if(data.code==200){
+						alert("登录成功");
+					 location.href="index?token=data.data";
+					 vm.msg = '登录成功！'
+					}else{
+						alert("登录失败");
+					}
+					
+					
 					vm.userName = data.userName
 					sessionStorage.setItem('accessToken', data.access_token)
-					sessionStorage.setItem('userName', vm.userName)
 				},
 				error: vm.requestError
 			})

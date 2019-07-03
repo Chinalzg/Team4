@@ -36,7 +36,8 @@ class Order extends Model
       }
 
       public function getOrderDetail($id)
-      {
+      {     
+            // var_dump($id);exit;
             $list = Order::where('id', $id)->first()->toArray();
 
             switch ($list['pay_method']) {

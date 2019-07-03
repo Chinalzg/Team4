@@ -8,6 +8,7 @@ use Illuminate\Routing\Controller;
 use Modules\Admin\Model\Goods;
 use App\Http\Requests\StoreGoodsPost;
 use DB;
+use session;
 class IndexController extends Controller
 {
 
@@ -19,16 +20,50 @@ class IndexController extends Controller
     {
         $list = DB::table('category')->get();
 
-        return \json_encode(['code'=>0,'data'=>$list]);
+        return \json_encode(['code'=>200, 'msg'=>'请求成功', 'data'=>$list]);
     }
-
 
     public function goods()
     {
         $list = DB::table('goods')->limit(4)->get();
 
-        return \json_encode(['code'=>0,'data'=>$list]);
+        return \json_encode(['code'=>200, 'msg'=>'请求成功', 'data'=>$list]);
     }
+    public function categoryList()
+    {
+        $list = DB::table('goods_category')->where('pid','=',0)->get();
+        // var_dump($list);die;
+        return \json_encode(['code'=>200, 'msg'=>'请求成功', 'data'=>$list]);
+    }
+    
+    
+
+    public function categoryShow()
+    {
+        $list = Goods::showCity();
+        // echo "<pre>";
+        // var_dump($list);die;
+        return \json_encode(['code'=>200, 'msg'=>'请求成功', 'data'=>$list]);
+    }
+
+    public function productDetailed(Request $request)
+    {
+        $id = $request->input('id');
+
+        $list = DB::table('category')->get();
+        $data = DB::table('goods')->where('id',$id)->get();
+        
+        return view("admin::index.productDetailed", ['list'=>$list, 'data'=>$data]);
+    }
+    public function productList(Request $request)
+    {
+        $id = $request->input('id');
+
+        $result = DB::table('goods')->where('category_id',$id)->get();
+
+        return view("admin::index.productList", ['data'=>$result]);
+    }
+
 
     /**
      * 电商首页

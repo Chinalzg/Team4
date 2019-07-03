@@ -7,7 +7,6 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Modules\Admin\Model\Goods;
 use App\Http\Requests\StoreGoodsPost;
-
 class GoodsController extends Controller
 {
     /**
@@ -52,7 +51,8 @@ class GoodsController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function addProduct()
-    {
+    {   
+
         $model = new Goods();
 
         $list = $model->goods();
@@ -71,6 +71,8 @@ class GoodsController extends Controller
      */
     public function addProductCheck(StoreGoodsPost $request)
     {
+        
+
         $validated = $request->validated();
 
         $file = $request->file('img');
@@ -80,7 +82,7 @@ class GoodsController extends Controller
         $extension = $request->img->extension();
 
         $path = $request->img->store('');
-
+        
         $path = "/static/images/".$path;
 
         $data = $_POST;

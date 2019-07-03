@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="419b79af-27d2-4cd8-bdce-84a03c98ed10" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/.styleci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Config/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Config/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Console/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Database/Migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Database/Seeders/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Database/Seeders/AdminDatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Database/factories/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Entities/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Http/Controllers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Http/Controllers/AdminController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Http/Controllers/MenuController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Http/Controllers/RoleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Http/Controllers/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Http/Middleware/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Http/Requests/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Models/Admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Models/Power.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Models/Role.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Models/Shop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Providers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Providers/AdminServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/lang/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/ceshi.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/layouts/master.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/menuadd.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/menushow.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/menuupd.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/roleadd.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/roleshow.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/roleson.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/roleupd.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/useradd.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/usershow.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/userupd.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Tests/Feature/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/Tests/Unit/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/module.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Admin/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/Modules/Helpers/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Middleware/MustPower.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/hashing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/logging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/modules.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/database/migrations/2019_06_09_111827_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/css/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/css/pintuer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/ban1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/detailnoimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/p_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/passcode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/sj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/tmbg-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/images/y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/jedate/jedate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/jedate/jedate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/jedate/skin/gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/jedate/skin/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/jedate/skin/jedate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/jedate/skin/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/chord.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/eventRiver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/force.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/k.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/radar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/scatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/venn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/chart/wordCloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/echarts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/echarts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/theme/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/theme/infographic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/dist/theme/macarons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/extend/layer.ext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/skin/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/skin/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/skin/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/skin/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/skin/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/skin/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/layer/skin/layer.ext.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/pintuer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/formula/formula.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/formula/formula.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/formula/formula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/formula/images/formula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/image/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/image/images/upload1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/image/images/upload2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/link/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/map/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/jsp/Uploader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/jsp/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/jsp/getContent.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/jsp/imageUp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/jsp/ueditor-mini.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/imglabel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/zh-cn/images/imglabel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/css/umeditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/css/umeditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/images/caret.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/images/ok.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/images/pop-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/Symbola.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/Symbola.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/Symbola.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/Symbola.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/Symbola.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/STIXFontLicense2010.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneral-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneral-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneral-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneral-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbol-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbol-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbol-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbol-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbolita-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbolita-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbolita-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbolita-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralitalic-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralitalic-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralitalic-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralitalic-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/mathquill.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/mathquill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/third-party/mathquill/mathquill.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/umeditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/umeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/static/js/umeditor/umeditor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/js/components/ExampleComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/sass/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gs/laravel/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Api/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Api/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Api/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Api/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Api/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Api/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/images/znNS2SKjaXGPc2bFpcNY58dRBduLYJIH7paKgKEf.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.idea/shop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Controllers/admin/IndexController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Controllers/index/IndexController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Http/Model/shopModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/hashing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/logging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/css/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/css/pintuer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/ban1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/detailnoimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/p_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/passcode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/sj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/tmbg-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/images/y.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/jedate/jedate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/jedate/jedate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/jedate/skin/gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/jedate/skin/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/jedate/skin/jedate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/jedate/skin/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/chord.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/eventRiver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/force.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/k.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/radar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/scatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/venn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/chart/wordCloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/echarts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/echarts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/theme/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/theme/infographic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/dist/theme/macarons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/extend/layer.ext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/skin/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/skin/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/skin/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/skin/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/skin/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/skin/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/layer/skin/layer.ext.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/pintuer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/formula/formula.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/formula/formula.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/formula/formula.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/formula/images/formula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/image/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/image/images/upload1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/image/images/upload2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/link/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/map/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/jsp/Uploader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/jsp/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/jsp/getContent.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/jsp/imageUp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/jsp/ueditor-mini.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/imglabel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/zh-cn/images/imglabel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/css/umeditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/css/umeditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/images/caret.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/images/ok.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/images/pop-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/Symbola.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/Symbola.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/Symbola.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/Symbola.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/Symbola.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/STIXFontLicense2010.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneral-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneral-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneral-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneral-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbol-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbol-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbol-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbol-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbolita-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbolita-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbolita-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralbolita-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralitalic-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralitalic-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralitalic-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/font/stixgeneral-bundle/stixgeneralitalic-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/mathquill.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/mathquill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/third-party/mathquill/mathquill.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/umeditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/umeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/admin/js/umeditor/umeditor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/js/components/ExampleComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/sass/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/Competence.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add_product.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add_product_1.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add_product_2.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add_product_3.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add_product_4.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add_product_5.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add_product_6.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/add_product_7.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/adv.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/book.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/book_1.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/book_2.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cate.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cate_1.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cate_2.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cate_3.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cate_4.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cate_5.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-20.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/cateedit_1.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/column.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-20.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-27.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-30.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-31.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-33.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-34.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-35.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-36.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-37.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-38.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-39.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-40.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-41.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-42.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-43.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-44.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-45.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-46.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-47.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-48.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-49.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-50.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-51.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-52.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-53.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-54.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-55.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-56.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-57.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-58.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-59.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddgl-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddtj-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddxq-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ddxq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/djgl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/dqfb-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/gly-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/hy-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/hyjl-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/jy-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/jyinfo-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/jyje.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/llfx-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/lywz-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/pass-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/pass-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/pass-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/pass-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/pass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/person-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/psfs-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/qxgl-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/qxgl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/shop-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/ssyq-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/tips.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/wz-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/xghy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/resources/views/zffs-chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/webpack.mix.js" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1960021183">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileColors">
+    <fileColor scope="All" color="Violet" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Api/Routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Api/Http/Controllers/ApiController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Api/Http/Controllers/AuthController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckToken.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Api/Routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;p&gt;</find>
+      <find>admin</find>
+      <find>button bg-main</find>
+      <find>shop_name</find>
+      <find>id</find>
+      <find>del</find>
+      <find>hidden</find>
+      <find>添加</find>
+      <find>修改</find>
+      <find>转移</find>
+      <find>input</find>
+      <find>key</find>
+      <find>housei</find>
+      <find>删除</find>
+      <find>d</find>
+      <find>邮件</find>
+      <find>display</find>
+      <find>g_id</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Modules/Model/Admin.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/layouts/master.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Http/Controllers/AdminController.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/serviceshow.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/service.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/houseUpdate.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/houseInsert.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/StoreBlogPost.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Http/Requests/StoreBlogPost.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/houseCreate.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/houseStop.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/houseShow.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/review.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/reviewshow.blade.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Model/Users.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Database/Seeders/AdminDatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Http/Controllers/CommentController.php" />
+        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Resources/views/house.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Http/Controllers/WareHouseController.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Model/House.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Model/Admin.php" />
+        <option value="$PROJECT_DIR$/resources/views/wz.vue" />
+        <option value="$PROJECT_DIR$/index/src/router/index.js" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/Modules/Admin/Routes/web.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Api/Routes/api.php" />
+        <option value="$PROJECT_DIR$/Modules/Api/Http/Controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/CheckToken.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/Modules/Admin/package.json" />
+      <path value="$PROJECT_DIR$/Modules/Api/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/nwidart/laravel-modules" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="20" />
+    <option name="y" value="35" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="Routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/php/PHPTutorial/WWW/Team4/laravel/Modules/Admin/Resources/views/house.blade.php" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="419b79af-27d2-4cd8-bdce-84a03c98ed10" name="默认的" comment="" />
+      <created>1560150828458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560150828458</updated>
+      <workItem from="1560150830777" duration="11490000" />
+      <workItem from="1560213066404" duration="26562000" />
+      <workItem from="1560299564811" duration="22485000" />
+      <workItem from="1560386371954" duration="17360000" />
+      <workItem from="1560472285216" duration="11421000" />
+      <workItem from="1560559826384" duration="2356000" />
+      <workItem from="1560683684202" duration="4779000" />
+      <workItem from="1560730845570" duration="7859000" />
+      <workItem from="1560911352997" duration="1103000" />
+      <workItem from="1561098978733" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="105427000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="20" y="35" width="1346" height="688" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.21928461" />
+      <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.16944024" />
+      <window_info id="npm" order="2" side_tool="true" weight="0.32980332" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="运行" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="找到" order="13" />
+      <window_info anchor="bottom" id="调试" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/serviceshow.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/统一后台静态页面/cate-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="21" column="29" lean-forward="true" selection-end-line="61" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/统一后台静态页面/cate-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="38" column="127" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/统一后台静态页面/cate-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/StoreBlogPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/houseInsert.blade.php" />
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/houseCreate.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/houseStop.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="110" column="14" lean-forward="true" selection-start-line="100" selection-end-line="110" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/houseShow.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="101" column="34" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Http/Requests/StoreBlogPost.php" />
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Model/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Http/Controllers/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2225">
+          <caret line="93" column="3" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Database/Seeders/AdminDatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/house.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1975">
+          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Http/Controllers/WareHouseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1675">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../laravel/app/Http/Controllers/HomeController.php" />
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Model/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/reviewshow.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/review.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="58" column="103" selection-start-line="58" selection-start-column="103" selection-end-line="58" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Model/House.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Resources/views/houseUpdate.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/src/router/index.js" />
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/config/dev.env.js" />
+    <entry file="file://$PROJECT_DIR$/index/config/index.js" />
+    <entry file="file://$PROJECT_DIR$/index/config/prod.env.js" />
+    <entry file="file://$PROJECT_DIR$/index/config/test.env.js" />
+    <entry file="file://$PROJECT_DIR$/index/build/build.js" />
+    <entry file="file://$PROJECT_DIR$/index/build/check-versions.js" />
+    <entry file="file://$PROJECT_DIR$/index/build/vue-loader.conf.js" />
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Routes/api.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/channels.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/console.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/wz.vue" />
+    <entry file="file://$PROJECT_DIR$/Modules/Admin/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Api/Routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Api/Http/Controllers/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Api/Http/Controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Api/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
