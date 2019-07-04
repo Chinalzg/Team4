@@ -28,4 +28,28 @@ class Cart extends Model
 		
 		return $carts;
 	}
+	 //具体个人的购物车信息
+    public function cartSelect($id,$limit,$size)
+    {
+        return Cart::where('user_id',$id)
+            ->offset($limit)
+            ->limit($size)
+            ->get()
+            ->toArray();
+    }
+
+    public function cartDelete($id)
+    {
+        return Cart::where('id',$id)
+            ->delete();
+    }
+
+    //某一个订单的信息
+    public function cartInfo($id,$userid)
+    {
+        return Cart::where('goods_id',$id)
+            ->where('user_id',$userid)
+            ->first()->toArray();
+    }
+
 }

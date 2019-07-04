@@ -22,4 +22,16 @@ class User extends Model
 	{
 		return User::where('name', $data['name'])->where('password', md5($data['password']))->first();
 	}
+
+	public static function getCoupon($id)
+	{
+		return Db::table('purse')->where('user_id', $id)->where('type', 0)->select(['id', 'value', 'number'])->get();
+	}
+
+	public static function getInteg($id)
+	{
+		return Db::table('purse')->where('user_id', $id)->where('type', 1)->select(['id', 'value'])->get();
+	}
+
+	
 }

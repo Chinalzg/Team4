@@ -32,6 +32,7 @@ class OrderStatus extends Model
 
       public static function orderStatusUpdate($data)
       {     
+            echo $data['id'];exit;
                   $orderStatus = OrderStatus::find($data['id']);
                   $orderStatus->order_status = $data['order_status'];
                   return $order_status->save();

@@ -7,25 +7,45 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Modules\Api\Models\User as U;
+use Modules\Api\Models\Message;
+use Modules\Api\Models\Goods;
 use App\Http\Requests\StoreUserPost;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Lcobucci\JWT\Builder;
 use Lcobucci\JWT\Signer\Hmac\Sha256;
+use Modules\Api\Models\Order;
+use Modules\Api\Models\Collect;
+
 
 class UserController extends Controller
 {
 	public function register(StoreUserPost $request)
 	{
+    
 		$validated = $request->validated();
  		if($request->input('password') !== $request->input('surePassword'))
  		{
  			return response()->json(['code' => 409, 'message' => '两次密码不一致']);
  		}
- 		$path = $request->image->store('user');
+<<<<<<< HEAD
  		
- 		$data = $request->only(['name', 'password', 'email', 'tel', 'nickName', 'bir' ,'sex']);
- 		$data['image'] = $path;
+ 		
+ 		$data = $request->only(['name', 'password', 'email']);
+ 		
+=======
+<<<<<<< HEAD
+ 		// $path = $request->image->store('user');
+ 		
+ 		$data = $request->only(['name', 'password', 'email']);
+ 		// $data['image'] = $path;
+=======
+ 		
+ 		
+ 		$data = $request->only(['name', 'password', 'email']);
+ 		
+>>>>>>> a
+>>>>>>> 3ce4f1bb282214f046971d70a428723b86d5d83a
  		
 		$result = U::insertUser($data);
 
@@ -71,6 +91,7 @@ class UserController extends Controller
 
 	public function login(Request $request)
 	{
+		// return $_POST;
 		if(!$request->filled(['name', 'password'])){
     		return response()->json(['code' => 403, 'message' => '用户名和密码不可为空']);
 		}
@@ -82,6 +103,21 @@ class UserController extends Controller
 		}
 		
 		$token = $this->getToken($result->id, $result->name);
+<<<<<<< HEAD
+    
+=======
+<<<<<<< HEAD
+
+		// session::put();
+		$request->session()->put('user_id',$result['id']);
+		$request->session()->put('user_name',$result['name']);
+		$request->session()->put('token',$token);
+		// session::put('name',$result['name']);
+
+=======
+    
+>>>>>>> a
+>>>>>>> 3ce4f1bb282214f046971d70a428723b86d5d83a
 		return response()->json(['code' => 200, 'message' => '登陆成功', 'data' => $token]);
 
 
@@ -111,4 +147,228 @@ class UserController extends Controller
 		// 获取生成的token
 		return (string)$builder->getToken();
 	}
+
+	public function message(Request $request)
+	{
+		$id = $request->input('id','');
+		if(!$id){
+			return response()->json(['code' => 408, 'message' => '用户id不存在']);
+		}
+
+		$message = Message::getMessage($id);
+		return response()->json(['code' => 200, 'message' => '请求成功', 'data' => $message]);
+	}
+
+	public function recommend(Request $request)
+	{
+			$size = $request->input('size', 10);
+		 	$p = $request->input('p', 1);
+		 	$data = Goods::getRecommend($size, $p);
+
+		 	return response()->json(['code' => 200, 'message' => '请求成功', 'data' => $data]);
+	}
+	 //个人信息接口
+      public function userShow()
+      {
+          $id = $_GET['id'];
+          $data = DB::table('user')->where('id',$id)->first();
+          if(! $id){
+              return response()->json([
+                  'msg' => '请输入ID',
+                  'status' => '1001'
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $data
+              ]);
+          }
+      }
+
+      //个人信息修改
+      public function userUpd(Request $request)
+      {
+          //用户ID
+          $user_id = $request->post('id');
+          //接收修改的值
+          $data = $request->all();
+          $info = DB::table('user')
+              ->where('id',$user_id)
+              ->update($data);
+          if($info == 1){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '修改成功',
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 1005,
+                  'msg' => '修改失败',
+              ]);
+          }
+      }
+
+      //我的收藏接口
+      public function userCollect()
+      {
+          //用户ID
+          $user_id = $_GET['user_id'];
+          $obj = new Collect();
+          $info = $obj->colSlect($user_id);
+
+          foreach ($info as $k => $v){
+              $goods = new Goods();
+              $info[$k]['goods'] = $goods->goodsInfo($v['goods_id']);
+          }
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 4001,
+                  'msg' => '失败',
+              ]);
+
+          }
+      }
+
+      //删除收藏接口
+      public function userColdel()
+      {
+          //用户ID
+          $user_id = $_GET['user_id'];
+          //商品ID
+          $goods_id = $_GET['goods_id'];
+
+          $obj = new Collect();
+          $info = $obj->colDel($user_id,$goods_id);
+          if($info == 1){
+              return response()->json([
+                 'status' => 200,
+                  'msg' => '删除成功'
+              ]);
+          }else{
+              return response()->json([
+                  'status' => '4001',
+                  'msg' => '删除失败，请查看数据是否存在'
+              ]);
+          }
+
+      }
+
+      //我的订单接口  全部订单
+      public function orderShowall()
+      {
+          //接收用户ID
+          $userid = $_GET['id'];
+          $obj = new Order();
+          $info = $obj->orderAll($userid);
+//          print_r($info);die;
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '空空如也',
+              ]);
+          }
+
+      }
+
+      //我的订单接口  待支付订单
+      public function orderUnpaid()
+      {
+          //接收用户ID
+          $userid = $_GET['id'];
+          $obj = new Order();
+          $info = $obj->unpaid($userid);
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '空空如也',
+              ]);
+          }
+      }
+
+      //我的订单接口  待收货订单
+      public function orderUndone()
+      {
+          //接收用户ID
+          $userid = $_GET['id'];
+          $obj = new Order();
+          $info = $obj->undone($userid);
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '空空如也',
+              ]);
+          }
+      }
+
+      //我的订单接口  待评价订单
+      public function orderComment(){
+          //接收用户ID
+          $userid = $_GET['id'];
+          $info = DB::select("select * from `order` AS o LEFT JOIN order_detail AS od on o.id=od.order_id where is_comment = 2  AND o.buyer in($userid)");
+          if($info){
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '成功',
+                  'data' => $info
+              ]);
+          }else{
+              return response()->json([
+                  'status' => 200,
+                  'msg' => '空空如也',
+              ]);
+          }
+      }
+
+      public function coupon(Request $request)
+      {
+          $id = $request->input('id', '');
+
+          if(!$id){
+              return response()->json(['code' => 406 ,'message' => '无效访问']);
+          }
+
+          
+          $coupon = U::getCoupon($id);
+
+          return response()->json(['code' => 200 ,'message' => '请求成功', 'data' => $coupon]);
+      }
+
+      public function integ(Request $request)
+      {
+          $id = $request->input('id', '');
+
+          if(!$id){
+              return response()->json(['code' => 406 ,'message' => '无效访问']);
+          }
+
+          
+          $integ = U::getInteg($id);
+
+          return response()->json(['code' => 200 ,'message' => '请求成功', 'data' => $integ]);
+      }
 }
