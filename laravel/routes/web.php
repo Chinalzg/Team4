@@ -15,12 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login','User\UserController@login');
 
 Route::post('foo','User\UserController@foo');
 
 Route::post('register','Login\LoginController@register');
-<<<<<<< HEAD
-=======
+
+
+Route::any('productlist','Admin\ProductController@productList');
+Route::any('productdetailed','Admin\ProductController@productDetailed');
+Route::any('getpromotion','Admin\ProductController@getPromotion');
+
+
 
 
 Route::get('/brandadd','Modules\Admin\Http\Controllers\BrandController@brandAdd');
@@ -31,10 +37,5 @@ Route::group(['prefix' => 'jwt'], function () {
     Route::get('/', ['uses'=>'JwtController@index','middleware'=>'auth:apijwt']); 
     
 });
-
-<<<<<<< HEAD
 Route::view('/shopCart', 'shopCart');
-=======
 Route::view('/shopCart', 'shopCart');
->>>>>>> a
->>>>>>> 3ce4f1bb282214f046971d70a428723b86d5d83a

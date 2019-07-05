@@ -150,6 +150,7 @@ Route::prefix('admin')->group(function() {
 });
 Route::get('/changeLocale/{locale}', 'AdminController@changeLocale')->middleware('setLocale');
 
+
 Route::prefix('index')->group(function() {
     Route::any('/login', 'LoginController@login');
     Route::any('/loginOut', 'LoginController@loginOut');
@@ -163,6 +164,5 @@ Route::prefix('index')->group(function() {
     Route::any('/productDetailed', 'IndexController@productDetailed');
     Route::any('/productList', 'IndexController@productList');
 });
-
 
 

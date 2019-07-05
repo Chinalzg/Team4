@@ -18,16 +18,18 @@ class GoodscategoryController extends Controller
 
 		if ($request->isMethod('post')) {
 
+			$validatedData = $request->validate([
+		        'name' => 'required|max:255',
+		        'code' => 'required',
+		        'pid' => 'required',
+		        'status' => 'required',
+		    ]);
+
 			$post = $request->input();
 
-			$data = [
-				'name' => $post['name'],
-				'code' => $post['code'],
-				'pid' => $post['pid'],
-				'status' => $post['status']
-			];
+			unset($post['_token']);
 
-			$res = $goodscategory->insert($data);
+			$res = $goodscategory->insert($post);
 
 			if ($res) {
 

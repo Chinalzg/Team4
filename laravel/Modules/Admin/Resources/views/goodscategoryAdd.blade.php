@@ -54,14 +54,16 @@
           <div class="tips">不选择上级分类默认为一级分类</div>
         </div>
       </div>
-      
-      <div class="form-group">
+       <div class="form-group">
         <div class="label">
+          <label>商品分类状态：</label>
           <label>分类状态：</label>
         </div>
         <div class="field">
           <div class="product-mulde product-mulde-a">
                     <ul>
+                      <li>
+                          <input type="radio" name="status" value="1"><label>启用</label>
                       <li><input type="radio" name="status" value="1"><label>启用</label>
                           <input type="radio" name="status" value="2"><label>禁用</label>
                       </li>
